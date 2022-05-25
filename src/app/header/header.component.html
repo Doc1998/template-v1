@@ -1,0 +1,26 @@
+<header #navigation    (scroll)="onScroll()"     [ngClass]="colorHeader? 'color':'noColor'">
+    <div class="logo">
+        <img class="light" aria-hidden="true" src="/assets/images/logo-light.png" decoding="async" alt="logo" width="221" height="66" *ngIf = "colorHeader">
+        <img class="light" aria-hidden="true" src="/assets/images/logo-blue.png" decoding="async" alt="logo" width="221" height="66"*ngIf = "!colorHeader">
+    </div>
+    <div class="navigation">
+        <ul class="navList" *ngIf="!phoneView">
+         <li><span><a>About</a></span></li>
+         <li><span><a>About</a></span></li>
+         <li><span><a>About</a></span></li>
+         <li><span><a>About</a></span></li>
+        </ul>
+          <!--Mobile Nav toggle-->
+        <button class="hamburger-menu" (click) = "dropDownMenu(ham)" #ham *ngIf="phoneView">
+        <span aria-hidden="true"></span>
+        </button>
+    </div>
+</header>
+<div class="navListMenu" *ngIf = "showDropDown">
+    <ul class="navListPhone">
+        <li><a>About</a></li>
+        <li><a>About</a></li>
+        <li><a>About</a></li>
+        <li><a>About</a></li>
+    </ul>
+</div>
