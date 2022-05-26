@@ -4,16 +4,13 @@
         position:fixed;
         display: flex;
         justify-content: space-around;
-    }
-    .color{
-        background-color: #FFBA19;
-        span:hover{
-            border-bottom: 5px solid white;
-            padding-bottom: 5px;
-        }
+        box-shadow: -5px 0 22px -1px rgb(0 0 0 / 15%);
     }
     .noColor{
-        background-color: #FFBA19;
+        background-color: white;
+    }
+    .color{
+        background-color: white;
     }
     .navList{
         display: flex;
@@ -234,11 +231,21 @@
     }    
 }
 @media only screen and (min-width: 1024px) {
+    header{
+        box-shadow: none;
+    }
     .navList{
         font-size: 1.5rem;
     }
     .noColor{
         background-color: transparent;
     }   
+    .color{
+        background-color: #FFBA19;
+        span:hover{
+            border-bottom: 5px solid white;
+            padding-bottom: 5px;
+        }
+    }
      
 }

@@ -21,10 +21,12 @@ export class HeaderComponent implements OnInit {
   }
 
   @HostListener('window:scroll',['$event']) onScroll(){
-    if(window.scrollY > 100){
-      this.colorHeader = true;
-    }else{
-      this.colorHeader = false;
+    if(!this.phoneView){
+      if(window.scrollY > 100){
+        this.colorHeader = true;
+      }else{
+        this.colorHeader = false;
+      }
     }
  }
  @HostListener('window:resize')
