@@ -1,0 +1,42 @@
+@media only screen and (min-width: 0em) {
+    section{
+        background-color: white;
+        margin-top: 20em;
+    }
+    .serviceCard{
+        width: 90%;
+        color:black;
+        background-color: white;
+        margin-left: 5%;
+        margin-top: 50px;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        border-top: 0.375em solid #FFBA19;
+        border-radius: 0.3125em;
+    }
+    .card{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        picture{
+            background-color: #FFBA19;
+            padding: 20px;
+            border-radius: 50%;
+        }
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .serviceCard{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: -10em;
+        padding: 2em;
+    }
+    .card{
+        width: 30%;
+        margin-left: 3%;
+    }
+}
