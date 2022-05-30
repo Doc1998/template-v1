@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { LandingComponent } from './landing/landing.component';
 import { ServicesComponent } from './services/services.component';
+import { CtaComponent } from './cta/cta.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     LandingComponent,
-    ServicesComponent
+    ServicesComponent,
+    CtaComponent
   ],
   imports: [
     BrowserModule,
