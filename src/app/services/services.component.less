@@ -1,44 +1,60 @@
 @media only screen and (min-width: 0em) {
-    section{
-        background-color: white;
-        margin-top: 20em;
+  section {
+    background-color: white;
+    margin-top: 20em;
+  }
+  .serviceKeywords {
+    background-color: blue;
+  }
+  .serviceCard {
+    width: 90%;
+    color: black;
+    background-color: white;
+    margin-left: 5%;
+    margin-top: 50px;
+    margin-bottom: 0;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-top: 0.375em solid #ffba19;
+    border-radius: 0.3125em;
+    position: relative;
+    top: -18em;
+  }
+  .card {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    picture {
+      background-color: #ffba19;
+      padding: 20px;
+      border-radius: 50%;
+      margin-bottom: 1em;
     }
-    .serviceCard{
-        width: 90%;
-        color:black;
-        background-color: white;
-        margin-left: 5%;
-        margin-top: 50px;
-        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-        border-top: 0.375em solid #FFBA19;
-        border-radius: 0.3125em;
-        position: relative;
-        top: -18em;
+    p {
+      width: 70%;
+      font-size: 0.7rem;
+      margin-bottom: 1em;
     }
-    .card{
-        margin-top: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-        picture{
-            background-color: #FFBA19;
-            padding: 20px;
-            border-radius: 50%;
-        }
+    h2 {
+      margin-bottom: 1em;
     }
+  }
+  .generalServices {
+    position: relative;
+  }
 }
 @media only screen and (min-width: 1024px) {
-    .serviceCard{
-        display: flex;
-        flex-direction: row;
-        position: relative;
-        top: -10em;
-        padding: 2em;
-    }
-    .card{
-        width: 30%;
-        margin-left: 3%;
-    }
+  .serviceCard {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -10em;
+    padding: 2em;
+  }
+  .card {
+    width: 30%;
+    margin-left: 3%;
+  }
 }
