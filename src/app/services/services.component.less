@@ -17,7 +17,7 @@
     border-top: 0.375em solid #ffba19;
     border-radius: 0.3125em;
     position: relative;
-    z-index: 100;
+    z-index: 9;
     margin-bottom: 5em;
   }
   .card {
@@ -75,8 +75,22 @@
     .content {
       margin-top: 3em;
       width: 90%;
-      list-style-type: none;
-      list-style: none;
+      ul {
+        list-style-type: none;
+        list-style: none;
+        li {
+          margin-top: 1em;
+          span {
+            margin-left: 0.5em;
+          }
+        }
+      }
+      p {
+        margin-bottom: 2em;
+        margin-top: 2em;
+        font-size: 0.9em;
+        text-align: left;
+      }
     }
   }
 }
