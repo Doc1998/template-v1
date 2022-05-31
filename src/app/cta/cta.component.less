@@ -1,44 +1,102 @@
-@media only screen and (min-width: 0em){
-    .call-to-action{
-        position: relative;
-        overflow-y: hidden;
-        overflow-x: hidden;
-        height: 100%;
-        padding: 1.125em 0;
-        picture{
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -2;
-        }
-        .container {
-            text-align: center;
+@media only screen and (min-width: 0em) {
+  .call-to-action {
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    height: 100%;
+    padding: 1.125em 0;
+    picture {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -2;
+    }
+    .container {
+      text-align: center;
+    }
+    p {
+      margin-bottom: 0.7em;
+      color: white;
+      font-size: 0.8em;
+    }
+    .title {
+      margin-bottom: 1em;
+      color: white;
+      font-size: 1em;
+    }
+  }
+  .call-to-action:before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
 
-        }
-        p{
-            margin-bottom: 0.7em;
-            color: white;
-            font-size: 0.8em;
-        }
-        .title{
-            margin-bottom: 1em;
-            color: white;
-            font-size: 1em;
-        }
-        
+  /* FOOTER */
+  .footer {
+    background: #1c1c1c;
+    color: white;
+    padding: 5.25em 0 1.25em;
+    font-size: min(4vw, 1.2em);
+  }
+  .left-section {
+    margin: auto;
+    margin-bottom: 3.125em;
+    text-align: center;
+    a,
+    p {
+      color: white;
     }
-    .call-to-action:before {
-        content: '';
-        position: absolute;
-        display: block;
-        height: 100%;
-        width: 100%;
-        background: #000;
-        opacity: .8;
-        top: 0;
-        left: 0;
-        z-index: -1;
+  }
+  .right-section {
+    width: 96%;
+    max-width: 25.4375em;
+    margin: auto;
+    .lists {
+      ul {
+        li {
+          color: white;
+          h2 {
+            color: white;
+          }
+          a {
+            color: white;
+            text-decoration: none;
+          }
+        }
+      }
     }
+  }
+  .right-section .lists {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 96%;
+    max-width: 19.1875em;
+    margin: auto;
+  }
+  .lists ul {
+    padding: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    list-style-type: none;
+    list-style: none;
+  }
+  .credit {
+    color: #fff;
+    width: 96%;
+    margin: auto;
+    text-align: center;
+    margin-top: 6.25em;
+    line-height: 2.25em;
+    font-size: 1em;
+  }
 }
