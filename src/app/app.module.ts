@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { LandingComponent } from './landing/landing.component';
 import { ServicesComponent } from './services/services.component';
 import { CtaComponent } from './cta/cta.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { CtaComponent } from './cta/cta.component';
     HeaderComponent,
     LandingComponent,
     ServicesComponent,
-    CtaComponent
+    CtaComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
