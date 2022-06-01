@@ -5,10 +5,11 @@
     </div>
     <div class="navigation">
         <ul class="navList" *ngIf="!phoneView">
-         <li><span><a>About</a></span></li>
-         <li><span><a>About</a></span></li>
-         <li><span><a>About</a></span></li>
-         <li><span><a>About</a></span></li>
+         <li><span><a [ngClass]="colorHeader? 'color':'noColor'">Home</a></span></li>
+         <li><span><a [ngClass]="colorHeader? 'color':'noColor'">About us</a></span></li>
+         <li><span><a [ngClass]="colorHeader? 'color':'noColor'">Projects</a></span></li>
+         <li><span><a [ngClass]="colorHeader? 'color':'noColor'">Reviews</a></span></li>
+         <li><span><a [ngClass]="colorHeader? 'color':'noColor'">Contact</a></span></li>
         </ul>
           <!--Mobile Nav toggle-->
         <button class="hamburger-menu" (click) = "dropDownMenu(ham)" #ham *ngIf="phoneView">

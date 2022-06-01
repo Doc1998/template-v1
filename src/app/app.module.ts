@@ -8,6 +8,11 @@ import { LandingComponent } from './landing/landing.component';
 import { ServicesComponent } from './services/services.component';
 import { CtaComponent } from './cta/cta.component';
 import { FooterComponent } from './footer/footer.component';
+import { AboutComponent } from './about/about.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { ReviewsComponent } from './reviews/reviews.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +21,12 @@ import { FooterComponent } from './footer/footer.component';
     LandingComponent,
     ServicesComponent,
     CtaComponent,
-    FooterComponent
+    FooterComponent,
+    AboutComponent,
+    AboutUsComponent,
+    ReviewsComponent,
+    ProjectsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,6 @@
 @media only screen and (min-width: 0em) {
   .services {
-    top: -18em;
+    top: 2em;
   }
   .serviceKeywords {
     position: relative;
@@ -9,8 +9,8 @@
     width: 90%;
     color: black;
     background-color: white;
+    top: 2em;
     margin-left: 5%;
-    margin-top: 50px;
     margin-bottom: 0;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     border-top: 0.375em solid #ffba19;
@@ -41,57 +41,11 @@
       margin-bottom: 1em;
     }
   }
-  .generalServices {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 3em;
-    .image-box:after {
-      content: "";
-      position: absolute;
-      display: block;
-      height: 10.25em;
-      width: 9.75em;
-      top: -8em;
-      left: 10em;
-      background: url(/assets/images/content-circles.svg);
-      background-size: contain;
-      background-position: center;
-      background-repeat: no-repeat;
-      z-index: -1;
-    }
-    .image-box:before {
-      content: "";
-      position: absolute;
-      height: 282px;
-      width: 200px;
-      top: 1em;
-      left: 4em;
-      background-color: #ffba19;
-      z-index: -1;
-    }
-    .content {
-      margin-top: 3em;
-      width: 90%;
-      ul {
-        list-style-type: none;
-        list-style: none;
-        li {
-          margin-top: 1em;
-          span {
-            margin-left: 0.5em;
-          }
-        }
-      }
-      p {
-        margin-bottom: 2em;
-        margin-top: 2em;
-        font-size: 0.9em;
-        text-align: left;
-      }
-    }
+  
+}
+@media only screen and (min-width: 667px) {
+  .serviceCard{
+    top: 2em;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -99,7 +53,7 @@
     display: flex;
     flex-direction: row;
     position: relative;
-    top: -10em;
+    top: 2em;
     padding: 2em;
   }
   .card {
