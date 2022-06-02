@@ -1,27 +1,84 @@
-<header #navigation    (scroll)="onScroll()"     [ngClass]="colorHeader? 'color':'noColor'">
-    <div class="logo">
-        <img class="light" aria-hidden="true" src="/assets/images/logo-light.png" decoding="async" alt="logo" width="221" height="66" *ngIf = "!colorHeader">
-        <img class="light" aria-hidden="true" src="/assets/images/logo-blue.png" decoding="async" alt="logo" width="221" height="66"*ngIf = "colorHeader">
-    </div>
-    <div class="navigation">
-        <ul class="navList" *ngIf="!phoneView">
-         <li><span><a [ngClass]="colorHeader? 'color':'noColor'">Home</a></span></li>
-         <li><span><a [ngClass]="colorHeader? 'color':'noColor'">About us</a></span></li>
-         <li><span><a [ngClass]="colorHeader? 'color':'noColor'">Projects</a></span></li>
-         <li><span><a [ngClass]="colorHeader? 'color':'noColor'">Reviews</a></span></li>
-         <li><span><a [ngClass]="colorHeader? 'color':'noColor'">Contact</a></span></li>
-        </ul>
-          <!--Mobile Nav toggle-->
-        <button class="hamburger-menu" (click) = "dropDownMenu(ham)" #ham *ngIf="phoneView">
-        <span aria-hidden="true"></span>
-        </button>
-    </div>
-</header>
-<div class="navListMenu" *ngIf = "showDropDown">
-    <ul class="navListPhone">
-        <li><a>About</a></li>
-        <li><a>About</a></li>
-        <li><a>About</a></li>
-        <li><a>About</a></li>
+<header
+  #navigation
+  (scroll)="onScroll()"
+  [ngClass]="colorHeader? 'color':'noColor'"
+>
+  <div class="logo">
+    <img
+      class="light"
+      aria-hidden="true"
+      src="/assets/images/logo-light.png"
+      decoding="async"
+      alt="logo"
+      width="221"
+      height="66"
+      *ngIf="!colorHeader && !phoneView"
+    />
+    <img
+      class="light"
+      aria-hidden="true"
+      src="/assets/images/logo-blue.png"
+      decoding="async"
+      alt="logo"
+      width="221"
+      height="66"
+      *ngIf="colorHeader || phoneView"
+    />
+  </div>
+  <div class="navigation">
+    <ul class="navList" *ngIf="!phoneView">
+      <li>
+        <span
+          ><a href="/home" [ngClass]="colorHeader? 'color':'noColor'"
+            >Home</a
+          ></span
+        >
+      </li>
+      <li>
+        <span
+          ><a href="/about-us" [ngClass]="colorHeader? 'color':'noColor'"
+            >About us</a
+          ></span
+        >
+      </li>
+      <li>
+        <span
+          ><a href="/projects" [ngClass]="colorHeader? 'color':'noColor'"
+            >Projects</a
+          ></span
+        >
+      </li>
+      <li>
+        <span
+          ><a href="/reviews" [ngClass]="colorHeader? 'color':'noColor'"
+            >Reviews</a
+          ></span
+        >
+      </li>
+      <li>
+        <span
+          ><a href="/contact" [ngClass]="colorHeader? 'color':'noColor'"
+            >Contact</a
+          ></span
+        >
+      </li>
     </ul>
+    <!--Mobile Nav toggle-->
+    <button
+      class="hamburger-menu"
+      (click)="dropDownMenu(ham)"
+      #ham
+      *ngIf="phoneView"
+    >
+      <span aria-hidden="true"></span>
+    </button>
+  </div>
+</header>
+<div class="navListMenu" *ngIf="showDropDown">
+  <ul class="navListPhone">
+    <li><a href="/about-us">About</a></li>
+    <li><a href="/reviews">Reviews</a></li>
+    <li><a href="/projects">Projects</a></li>
+    <li><a href="/contact">Contact</a></li>
+  </ul>
 </div>
