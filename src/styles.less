@@ -13,29 +13,18 @@
         --bodyText: #1a1a1a;
     }
 
-    // Grab your fonts to locally host from https://google-webfonts-helper.herokuapp.com/fonts
-    
-    /* roboto-regular - latin */
     @font-face {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        src: local('')
-    }
-    /* roboto-700 - latin */
-    @font-face {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        src: local('')
-    }
-    /* roboto-900 - latin */
-    @font-face {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 900;
-        src: local('')
-    }
+        font-family: 'poppins';
+        src: url('/assets/Poppins-Medium.ttf');
+      }
+      @font-face {
+        font-family: 'poppins-light';
+        src: url('/assets/Poppins-Light.ttf');
+      }
+      @font-face {
+        font-family: 'poppins-bold';
+        src: url('/assets/Poppins-Bold.ttf');
+      }
     
     body, html {
         margin: 0;
@@ -65,6 +54,7 @@
     h1, h2, h3, h4, h5, h6 {
         margin: 0;
         color: #1a1a1a;
+        font-family: poppins-bold;
     }
     
     p, li, a {
@@ -87,12 +77,12 @@
     /* CSS */
     .button-6 {
         align-items: center;
-        background-color: #FFBA19;
+        background-color: blue;
         border: 1px solid rgba(0, 0, 0, 0.1);
         border-radius: .25rem;
         box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
         box-sizing: border-box;
-        color: rgba(0, 0, 0, 0.85);
+        color: white;
         cursor: pointer;
         display: inline-flex;
         font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;

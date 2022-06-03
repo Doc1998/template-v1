@@ -1,0 +1,73 @@
+<header
+  #navigation
+>
+  <div class="logo">
+   <a href="/home">
+  <img
+    class="light"
+    aria-hidden="true"
+    src="/assets/images/logo-blue.png"
+    decoding="async"
+    alt="logo"
+    width="221"
+    height="66"
+  />
+   </a>
+  </div>
+  <div class="navigation">
+    <ul class="navList" *ngIf="!phoneView">
+      <li>
+        <span
+          ><a href="/home"
+            >Home</a
+          ></span
+        >
+      </li>
+      <li>
+        <span
+          ><a href="/about-us"
+            >About us</a
+          ></span
+        >
+      </li>
+      <li>
+        <span
+          ><a href="/projects"
+            >Projects</a
+          ></span
+        >
+      </li>
+      <li>
+        <span
+          ><a href="/reviews"
+            >Reviews</a
+          ></span
+        >
+      </li>
+      <li>
+        <span
+          ><a href="/contact"
+            >Contact</a
+          ></span
+        >
+      </li>
+    </ul>
+    <!--Mobile Nav toggle-->
+    <button
+      class="hamburger-menu"
+      (click)="dropDownMenu(ham)"
+      #ham
+      *ngIf="phoneView"
+    >
+      <span aria-hidden="true"></span>
+    </button>
+  </div>
+</header>
+<div class="navListMenu" *ngIf="showDropDown">
+  <ul class="navListPhone">
+    <li><a href="/about-us">About</a></li>
+    <li><a href="/reviews">Reviews</a></li>
+    <li><a href="/projects">Projects</a></li>
+    <li><a href="/contact">Contact</a></li>
+  </ul>
+</div>
