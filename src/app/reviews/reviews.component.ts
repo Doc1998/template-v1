@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReviewsComponent implements OnInit {
 
-  constructor() { }
-
+  constructor() { 
+  }
+ 
   ngOnInit(): void {
+    
   }
 
 }

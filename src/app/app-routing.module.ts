@@ -9,10 +9,10 @@ import { ReviewsComponent } from "./reviews/reviews.component";
 const routes: Routes = [
   { path: "home", component: LandingComponent },
   { path: "", component: LandingComponent },
-  { path: "about-us", component: AboutUsComponent },
-  { path: "reviews", component: ReviewsComponent },
-  { path: "projects", component: ProjectsComponent },
-  { path: "contact", component: ContactComponent }
+  { path: "about-us", component: AboutUsComponent, data: {title : 'About us | Small business Web Development | Ireland Web Designs'} },
+  { path: "reviews", component: ReviewsComponent, data: {title : 'Reviews | Small business Web Development | Ireland Web Designs'}},
+  { path: "projects", component: ProjectsComponent,  data: {title : 'Projects | Small business Web Development | Ireland Web Designs'}},
+  { path: "contact", component: ContactComponent, data: {title : 'Contact | Small business Web Development | Ireland Web Designs'}}
 ];
 
 @NgModule({

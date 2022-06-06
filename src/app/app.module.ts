@@ -15,6 +15,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeheaderComponent } from './homeheader/homeheader.component';
 import { PricingComponent } from './pricing/pricing.component';
+import { Meta } from '@angular/platform-browser';  
 
 @NgModule({
   declarations: [
