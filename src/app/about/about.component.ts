@@ -7,21 +7,22 @@ import { Component, HostListener, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
   scrWidth = window.innerWidth;
-  phoneView:boolean = true
+
   constructor() { }
   
   @HostListener('window:resize')
-  getScreenSize() {
+   getScreenSize() {
         this.scrWidth = window.innerWidth;
         if(this.scrWidth > 1024){
-         this.phoneView = false;
+         return this.phoneView = false;
        }else{
-         this.phoneView = true;
+        return this.phoneView = true;
        }
-        console.log(this.scrWidth);
   }
+  phoneView:boolean = this.getScreenSize();
 
   ngOnInit(): void {
+    this.getScreenSize();
   }
 
 }
