@@ -15,7 +15,8 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeheaderComponent } from './homeheader/homeheader.component';
 import { PricingComponent } from './pricing/pricing.component';
-import { Meta } from '@angular/platform-browser';  
+import { Meta } from '@angular/platform-browser';
+import { PortfolioComponent } from './portfolio/portfolio.component';  
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { Meta } from '@angular/platform-browser';
     ProjectsComponent,
     ContactComponent,
     HomeheaderComponent,
-    PricingComponent
+    PricingComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,
