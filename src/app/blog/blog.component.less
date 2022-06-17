@@ -1,0 +1,96 @@
+#blog h2 {
+    color: #121212;
+    font-size: 1.7em;
+    font-weight: 900;
+    text-align: center;
+    width: 200px;
+    margin: auto;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+#blog h2 span {
+    color: var(--primary);
+    margin-right: 10px;
+    opacity: 1;
+}
+.graphic-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 160px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.dash {
+    width: 50px;
+    border-bottom: 1px dashed rgba(67,183,255,.9);
+}
+.graphic-group img {
+    width: 30px!important;
+    margin-bottom: 0!important;
+}
+.box {
+    width: 100%;
+    max-width: 350px;
+    padding: 50px 30px;
+    background: #fff;
+    margin: auto;
+    margin-bottom: 50px;
+    border-radius: 6px;
+    border-top: 4px solid var(--primary);
+    -webkit-box-shadow: 0 0 25px -10px rgb(67 183 255);
+    box-shadow: 0 0 25px -10px rgb(67 183 255);
+}
+#blog .box:nth-child(1) .blog-image-box {
+    background: url(/assets/images/construction.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.box h3 {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.box p {
+    margin-bottom: 20px;
+}
+@media screen and (min-width: 1026px) {
+#blog .box {
+    -webkit-transform: scale(.85);
+    -ms-transform: scale(.85);
+    transform: scale(.85);
+}
+
+#blog .boxes-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+}
