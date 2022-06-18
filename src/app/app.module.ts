@@ -18,7 +18,8 @@ import { PricingComponent } from './pricing/pricing.component';
 import { Meta } from '@angular/platform-browser';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { BlogComponent } from './blog/blog.component';
-import { ArticlesComponent } from './articles/articles.component';  
+import { ArticlesComponent } from './articles/articles.component';
+import { ArticleOneComponent } from './article-one/article-one.component';  
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { ArticlesComponent } from './articles/articles.component';
     PricingComponent,
     PortfolioComponent,
     BlogComponent,
-    ArticlesComponent
+    ArticlesComponent,
+    ArticleOneComponent
   ],
   imports: [
     BrowserModule,
