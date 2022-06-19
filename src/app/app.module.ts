@@ -19,7 +19,10 @@ import { Meta } from '@angular/platform-browser';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { BlogComponent } from './blog/blog.component';
 import { ArticlesComponent } from './articles/articles.component';
-import { ArticleOneComponent } from './article-one/article-one.component';  
+import { ArticleOneComponent } from './article-one/article-one.component';
+import { ArticleTwoComponent } from './article-two/article-two.component';
+import { ArticleThreeComponent } from './article-three/article-three.component';
+import { SidebarComponent } from './sidebar/sidebar.component';  
 
 @NgModule({
   declarations: [
@@ -39,7 +42,10 @@ import { ArticleOneComponent } from './article-one/article-one.component';
     PortfolioComponent,
     BlogComponent,
     ArticlesComponent,
-    ArticleOneComponent
+    ArticleOneComponent,
+    ArticleTwoComponent,
+    ArticleThreeComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
