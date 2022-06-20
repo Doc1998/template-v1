@@ -48,6 +48,9 @@ export class HomeheaderComponent implements OnInit {
       target.classList.add('clicked');
     }
  }
+ scroll(el: HTMLElement){
+  el.scrollIntoView({ behavior: 'smooth', block: 'center' })
+}
 
 }
 

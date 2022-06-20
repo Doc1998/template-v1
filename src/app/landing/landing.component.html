@@ -1,4 +1,83 @@
-<app-homeheader></app-homeheader>
+<header
+  #navigation
+>
+  <div class="logo">
+   <a href="/home">
+    <img
+    class="light"
+    aria-hidden="true"
+    src="/assets/images/blue-trans.png"
+    decoding="async"
+    alt="logo"
+    width="218"
+    height="90"
+  />
+   </a>
+  </div>
+  <div class="navigation">
+    <ul class="navList" *ngIf="!phoneView">
+      <li>
+        <span
+          ><a href="/home"
+            >Home</a
+          ></span
+        >
+      </li>
+      <li>
+        <span
+          ><a href="/about-us"
+            >About us</a
+          ></span
+        >
+      </li>
+      <li>
+        <span
+        (click)="scroll(portfolio)" ><a
+            >Projects</a
+          ></span
+        >
+      </li>
+      <li>
+        <span
+          ><a href="/reviews"
+            >Reviews</a
+          ></span
+        >
+      </li>
+      <li>
+        <span
+          ><a href="/articles"
+            >Articles</a
+          ></span
+        >
+      </li>
+      <li>
+        <span
+          ><a href="/contact"
+            >Contact</a
+          ></span
+        >
+      </li>
+    </ul>
+    <!--Mobile Nav toggle-->
+    <button
+      class="hamburger-menu"
+      (click)="dropDownMenu(ham)"
+      #ham
+      *ngIf="phoneView"
+    >
+      <span aria-hidden="true"></span>
+    </button>
+  </div>
+</header>
+<div class="navListMenu" *ngIf="showDropDown">
+  <ul class="navListPhone">
+    <li><a href="/about-us">About</a></li>
+    <li><a href="/reviews">Reviews</a></li>
+    <li><a href="/projects">Projects</a></li>
+    <li><a href="/contact">Contact</a></li>
+  </ul>
+</div>
 <section id="hero">
   <div class="hero-content">
     <div class="heroText">
@@ -18,6 +97,6 @@
 <app-services></app-services>
 <app-about></app-about>
 <app-blog></app-blog>
-<app-portfolio></app-portfolio>
+<div id="portfolio" #portfolio><app-portfolio></app-portfolio></div>
 <app-pricing></app-pricing>
 
