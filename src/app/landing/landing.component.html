@@ -1,6 +1,5 @@
 <header
-  #navigation
->
+  #navigation>
   <div class="logo">
    <a href="/home">
     <img
@@ -72,9 +71,11 @@
 </header>
 <div class="navListMenu" *ngIf="showDropDown">
   <ul class="navListPhone">
+    <li><a href="/about-us">Home</a></li>
     <li><a href="/about-us">About</a></li>
     <li><a href="/reviews">Reviews</a></li>
-    <li  (click)="scroll(portfolio)"><a>Projects</a></li>
+    <li><a href="/home#portfolio">Projects</a></li>
+    <li><a href="/articles">Articles</a></li>
     <li><a href="/contact">Contact</a></li>
   </ul>
 </div>
