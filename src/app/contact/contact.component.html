@@ -28,7 +28,8 @@
       If you have any questions or concerns please feel free to reach out to us.
       We respond to every call and email.
     </p>
-    <form id="contact" name="Contact Form2" method="post" data-netlify="true">
+    <form id="contact" action="https://mailthis.to/docmp98@gmail.com"
+    method="POST" encType="multipart/form-data" >
       <div class="input-group">
         <label for="name">Full Name</label>
         <input
@@ -112,12 +113,16 @@
         ></textarea>
         <div aria-hidden="true" class="hover-box"></div>
       </div>
+      <input type="hidden" name="_subject" value="Contact form submitted">
+      <input type="hidden" name="_honeypot" value="">
+      <input type="hidden" name="_confirmation" value="">
       <p class="form-submit">
         <button
           name="submit"
           type="submit"
           id="contact-submit"
           class="button-6"
+          value="Send"
           data-submit="...Sending"
         >
           Submit
