@@ -22,7 +22,8 @@ import { ArticlesComponent } from './articles/articles.component';
 import { ArticleOneComponent } from './article-one/article-one.component';
 import { ArticleTwoComponent } from './article-two/article-two.component';
 import { ArticleThreeComponent } from './article-three/article-three.component';
-import { SidebarComponent } from './sidebar/sidebar.component';  
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { AboutMeComponent } from './about-me/about-me.component';  
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     ArticleOneComponent,
     ArticleTwoComponent,
     ArticleThreeComponent,
-    SidebarComponent
+    SidebarComponent,
+    AboutMeComponent
   ],
   imports: [
     BrowserModule,
