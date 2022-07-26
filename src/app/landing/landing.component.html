@@ -93,11 +93,26 @@
       <p>
         No page builders or WordPress - We offer 100% hand-coded websites with superior results starting at €149/mo
       </p>
-      <button class="button-6" onclick="location.href='/contact'" type="button" style="cursor:pointer">
+      <button class="button-6" onclick="location.href='/contact'" type="button" style="cursor:pointer; margin-bottom: 3em;">
         GET IN TOUCH
       </button>
     </div>
-    <img src="/assets/images/mockup.png" class="mock-up">
+    <picture>
+      <source
+        media="(max-width: 600px)"
+        srcset="/assets/images/mockup.png"
+        width="500px"
+        
+      />
+      <source media="(min-width: 601px)" srcset="/assets/images/mockup.png" />
+      <img
+        aria-hidden="true"
+        decoding="async"
+        src="/assets/images/mockup.png"
+        alt="cabinets"
+        width="900px"
+      />
+    </picture>
   </div>
 </section>
 <app-services></app-services>
