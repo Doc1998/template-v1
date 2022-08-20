@@ -6,6 +6,10 @@ import { ArticleThreeComponent } from "./article-three/article-three.component";
 import { ArticleTwoComponent } from "./article-two/article-two.component";
 import { ArticlesComponent } from "./articles/articles.component";
 import { ContactComponent } from "./contact/contact.component";
+import { HomeCorkComponent } from "./home-cork/home-cork.component";
+import { HomeDublinComponent } from "./home-dublin/home-dublin.component";
+import { HomeGalwayComponent } from "./home-galway/home-galway.component";
+import { HomeLimerickComponent } from "./home-limerick/home-limerick.component";
 import { LandingComponent } from "./landing/landing.component";
 import { ProjectsComponent } from "./projects/projects.component";
 import { ReviewsComponent } from "./reviews/reviews.component";
@@ -13,6 +17,10 @@ import { ReviewsComponent } from "./reviews/reviews.component";
 const routes: Routes = [
   { path: "home", component: LandingComponent },
   { path: "", component: LandingComponent },
+  { path: "locations/cork-web-design", component: HomeCorkComponent },
+  { path: "locations/galway-web-design", component: HomeGalwayComponent },
+  { path: "locations/dublin-web-design", component: HomeDublinComponent },
+  { path: "locations/limerick-web-design", component: HomeLimerickComponent },
   { path: "about-us", component: AboutUsComponent, data: {title : 'About us | Small business Web Development | Ireland Web Designs'} },
   { path: "reviews", component: ReviewsComponent, data: {title : 'Reviews | Small business Web Development | Ireland Web Designs'}},
   { path: "projects", component: ProjectsComponent,  data: {title : 'Projects | Small business Web Development | Ireland Web Designs'}},

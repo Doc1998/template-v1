@@ -23,7 +23,11 @@ import { ArticleOneComponent } from './article-one/article-one.component';
 import { ArticleTwoComponent } from './article-two/article-two.component';
 import { ArticleThreeComponent } from './article-three/article-three.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
-import { AboutMeComponent } from './about-me/about-me.component';  
+import { AboutMeComponent } from './about-me/about-me.component';
+import { HomeDublinComponent } from './home-dublin/home-dublin.component';
+import { HomeCorkComponent } from './home-cork/home-cork.component';
+import { HomeLimerickComponent } from './home-limerick/home-limerick.component';
+import { HomeGalwayComponent } from './home-galway/home-galway.component';  
 
 @NgModule({
   declarations: [
@@ -47,7 +51,11 @@ import { AboutMeComponent } from './about-me/about-me.component';
     ArticleTwoComponent,
     ArticleThreeComponent,
     SidebarComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    HomeDublinComponent,
+    HomeCorkComponent,
+    HomeLimerickComponent,
+    HomeGalwayComponent
   ],
   imports: [
     BrowserModule,

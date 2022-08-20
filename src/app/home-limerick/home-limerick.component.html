@@ -1,0 +1,170 @@
+<header
+  #navigation>
+  <div class="logo">
+   <a href="/home">
+    <img
+    class="light"
+    aria-hidden="true"
+    src="/assets/images/blue-trans.png"
+    decoding="async"
+    alt="logo"
+    width="218"
+    height="90"
+  />
+   </a>
+  </div>
+  <div class="navigation">
+    <ul class="navList" *ngIf="!phoneView">
+      <li>
+        <span
+          ><a href="/home"
+            >Home</a
+          ></span
+        >
+      </li>
+      <li>
+        <span
+          ><a href="/about-us"
+            >About us</a
+          ></span
+        >
+      </li>
+      
+      <li>
+        <span
+        (click)="scroll(portfolio)" ><a
+            >Projects</a
+          ></span
+        >
+      </li>
+      <!--
+      <li>
+        <span
+          ><a href="/reviews"
+            >Reviews</a
+          ></span
+        >
+      </li>
+      -->
+      <li>
+        <span
+          ><a href="/articles"
+            >Articles</a
+          ></span
+        >
+      </li>
+      <li>
+        <span
+          ><a href="/contact"
+            >Contact</a
+          ></span
+        >
+      </li>
+    </ul>
+    <!--Mobile Nav toggle-->
+    <button
+      class="hamburger-menu"
+      (click)="dropDownMenu(ham)"
+      #ham
+      *ngIf="phoneView"
+    >
+      <span aria-hidden="true"></span>
+    </button>
+  </div>
+</header>
+<div class="navListMenu" *ngIf="showDropDown">
+  <ul class="navListPhone">
+    <li><a href="/about-us">Home</a></li>
+    <li><a href="/about-us">About</a></li>
+    <!--
+    <li><a href="/reviews">Reviews</a></li>
+    -->
+    <li><a href="/home#portfolio">Projects</a></li>
+    <li><a href="/articles">Articles</a></li>
+    <li><a href="/contact">Contact</a></li>
+  </ul>
+</div>
+<section id="hero">
+  <div class="hero-content">
+    <div class="heroText">
+      <h1 id="home-h" class="home-h">
+        Small Business Web Design Limerick
+      </h1>
+      <p>
+          No page builders or WordPress - We offer 100% hand-coded websites with superior results starting at €149/mo
+      </p>
+      <button class="button-6" onclick="location.href='/contact'" type="button" style="cursor:pointer; margin-bottom: 3em;">
+        GET IN TOUCH
+      </button>
+    </div>
+    <picture>
+      <source
+        media="(max-width: 600px)"
+        srcset="/assets/images/mockup.png"
+        width="500px"
+        
+      />
+      <source media="(min-width: 601px)" srcset="/assets/images/mockup.png" />
+      <img
+        aria-hidden="true"
+        decoding="async"
+        src="/assets/images/mockup.png"
+        alt="cabinets"
+        width="900px"
+      />
+    </picture>
+  </div>
+</section>
+<section class="description">
+    <div class="descTitle">
+      <div class="descTitleText">
+        <h1 style="color:blue;margin-right:5px">WHAT</h1>
+        <h1>WE DO</h1>
+      </div>
+      <div class="dash"></div>
+    </div>
+    <div class="descPara">
+      <p>
+        We offer small business web design in Limerick and for clients
+        anywhere in Ireland. Every line of code is written by hand to ensure
+        the best performance, which helps bring in more customers to your site
+        and bring more revenue to your business. <a>Learn more</a>
+      </p>
+    </div>
+    <div class="what-we-do-container">
+      <div class="itemsList">
+        <div class="item">
+          <img src = "/assets/images/smartphone.png">
+          <h3>Mobile First Design</h3>
+          <p>
+            We start by building and optimizing the site for mobiles first, we
+            then add more code to make the website to make it desktop friendly
+          </p>
+        </div>
+        <div class="item">
+          <img src = "/assets/images/pie-chart.png">
+          <h3>Search Engine Optimized</h3>
+          <p>
+            57% of all internet traffic is on mobile devices, so we optimize
+            your mobile to perform their best in search engines.
+          </p>
+        </div>
+        <div class="item">
+          <img src = "/assets/images/desktop.png">
+          <h3>Fully Responsive</h3>
+          <p>
+            Your website will fit all mobile screens sizes, tablets, and desktop
+            sizes so new clients can access your site from anywhere.
+          </p>
+        </div>
+      </div>
+      <div class="transitionArrow">
+        <img src="/assets/images/arrow.png">
+      </div>
+    </div>
+  </section>
+<app-about></app-about>
+<app-blog></app-blog>
+<div id="portfolio" #portfolio><app-portfolio></app-portfolio></div>
+<app-pricing></app-pricing>
+
