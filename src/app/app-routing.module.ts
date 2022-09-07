@@ -15,12 +15,12 @@ import { ProjectsComponent } from "./projects/projects.component";
 import { ReviewsComponent } from "./reviews/reviews.component";
 
 const routes: Routes = [
-  { path: "home", component: LandingComponent },
+  { path: "home", component: LandingComponent, data: {title : 'Web Design Ireland | Small business Web Development'} },
   { path: "", component: LandingComponent },
-  { path: "locations/cork-web-design", component: HomeCorkComponent },
-  { path: "locations/galway-web-design", component: HomeGalwayComponent },
-  { path: "locations/dublin-web-design", component: HomeDublinComponent },
-  { path: "locations/limerick-web-design", component: HomeLimerickComponent },
+  { path: "locations/cork-web-design", component: HomeCorkComponent, data: {title : 'Cork Web Design | Small business Web Development'} },
+  { path: "locations/galway-web-design", component: HomeGalwayComponent, data: {title : 'Galway Web Design | Small business Web Development'} },
+  { path: "locations/dublin-web-design", component: HomeDublinComponent, data: {title : 'Dublin Web Design | Small business Web Development'} },
+  { path: "locations/limerick-web-design", component: HomeLimerickComponent, data: {title : 'Limerick Web Design | Small business Web Development'} },
   { path: "about-us", component: AboutUsComponent, data: {title : 'About us | Small business Web Development | Ireland Web Designs'} },
   { path: "reviews", component: ReviewsComponent, data: {title : 'Reviews | Small business Web Development | Ireland Web Designs'}},
   { path: "projects", component: ProjectsComponent,  data: {title : 'Projects | Small business Web Development | Ireland Web Designs'}},
