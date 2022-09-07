@@ -62,10 +62,10 @@
            .heroText{
                width: 60%;
                 h1{
-                    font-size: 2rem !important;
+                    font-size: 1.3em !important;
                 }
                 p{
-                    font-size: 1.2rem;
+                    font-size: 1em;
                 }
             }
           .mock-up{
@@ -88,7 +88,41 @@
     }
     }
 }
-
+@media only screen and (min-width: 1281px) {
+  #hero{
+    padding-top: 3rem;
+    .hero-content{
+        display: flex;
+        flex-direction: row;
+       .heroText{
+           width: 60%;
+            h1{
+                font-size: 2rem !important;
+            }
+            p{
+                font-size: 1.2rem;
+            }
+        }
+      .mock-up{
+          width: 700px;
+          
+      }
+   }
+   h1::after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 0.125em;
+    width: 1.515625em;
+    background: blue;
+    opacity: 1;
+    margin-top: 10px;
+    left: 25.5%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+}
+}
 
 
 // HEADER --------------------------- 
