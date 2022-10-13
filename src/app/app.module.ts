@@ -27,7 +27,9 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { HomeDublinComponent } from './home-dublin/home-dublin.component';
 import { HomeCorkComponent } from './home-cork/home-cork.component';
 import { HomeLimerickComponent } from './home-limerick/home-limerick.component';
-import { HomeGalwayComponent } from './home-galway/home-galway.component';  
+import { HomeGalwayComponent } from './home-galway/home-galway.component';
+import { OfferComponent } from './offer/offer.component';
+import { OfferTwoComponent } from './offer-two/offer-two.component';  
 
 @NgModule({
   declarations: [
@@ -55,7 +57,9 @@ import { HomeGalwayComponent } from './home-galway/home-galway.component';
     HomeDublinComponent,
     HomeCorkComponent,
     HomeLimerickComponent,
-    HomeGalwayComponent
+    HomeGalwayComponent,
+    OfferComponent,
+    OfferTwoComponent
   ],
   imports: [
     BrowserModule,

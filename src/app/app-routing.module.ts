@@ -11,12 +11,16 @@ import { HomeDublinComponent } from "./home-dublin/home-dublin.component";
 import { HomeGalwayComponent } from "./home-galway/home-galway.component";
 import { HomeLimerickComponent } from "./home-limerick/home-limerick.component";
 import { LandingComponent } from "./landing/landing.component";
+import { OfferTwoComponent } from "./offer-two/offer-two.component";
+import { OfferComponent } from "./offer/offer.component";
 import { ProjectsComponent } from "./projects/projects.component";
 import { ReviewsComponent } from "./reviews/reviews.component";
 
 const routes: Routes = [
   { path: "home", component: LandingComponent, data: {title : 'Web Design Ireland | Small business Web Development'} },
   { path: "", component: LandingComponent },
+  { path: "standard", component: OfferComponent },
+  { path: "standard-blog", component: OfferTwoComponent },
   { path: "locations/cork-web-design", component: HomeCorkComponent, data: {title : 'Cork Web Design | Small business Web Development'} },
   { path: "locations/galway-web-design", component: HomeGalwayComponent, data: {title : 'Galway Web Design | Small business Web Development'} },
   { path: "locations/dublin-web-design", component: HomeDublinComponent, data: {title : 'Dublin Web Design | Small business Web Development'} },
