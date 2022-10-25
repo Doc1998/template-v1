@@ -29,7 +29,8 @@ import { HomeCorkComponent } from './home-cork/home-cork.component';
 import { HomeLimerickComponent } from './home-limerick/home-limerick.component';
 import { HomeGalwayComponent } from './home-galway/home-galway.component';
 import { OfferComponent } from './offer/offer.component';
-import { OfferTwoComponent } from './offer-two/offer-two.component';  
+import { OfferTwoComponent } from './offer-two/offer-two.component';
+import { AdOfferComponent } from './ad-offer/ad-offer.component';  
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import { OfferTwoComponent } from './offer-two/offer-two.component';
     HomeLimerickComponent,
     HomeGalwayComponent,
     OfferComponent,
-    OfferTwoComponent
+    OfferTwoComponent,
+    AdOfferComponent
   ],
   imports: [
     BrowserModule,
