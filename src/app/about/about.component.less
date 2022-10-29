@@ -5,7 +5,25 @@ h1 span{
   font-family: poppins-bold;
 }
 h1{
-  font-size: 1.1em;
+  font-size: .9em;
+}
+h2{
+  font-size: .6em;
+  margin-top: 15px;
+
+}
+.cta{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h2{
+    margin-bottom: 15px;
+  }
+}
+.divider{
+  margin-top: 15px;
+
 }
 p{
   font-size: 0.8em;
@@ -45,13 +63,6 @@ h3{
 .pricing,.container{
   position: relative;
 }
-.right:before {
-  content: url(/assets/images/blob1.png);
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  opacity: .1;
-}
 .pricing img{
   width: 75%;
   margin-bottom: 80px;
@@ -85,7 +96,17 @@ p{
   font-family: poppins-light;
 }
 }
+ /* Tablet */
+ @media only screen and (min-width: 665px) {
+  .cta{
+    display: none;
+
+  }
+ }
 @media only screen and (min-width: 1024px) {
+  .cta{
+    display: none;
+  }
   .special-offer{
     font-size: 1.3em;color:blue;margin-bottom: 1em;
   }
