@@ -12,6 +12,9 @@ h2{
   margin-top: 15px;
 
 }
+#dividerBr::after{
+   content: "\a";
+}
 .cta{
   display: flex;
   flex-direction: column;
@@ -22,11 +25,21 @@ h2{
   }
 }
 .divider{
-  margin-top: 15px;
-
+  font-size: .9em;
+}
+.dividerBr{
+  font-size: .9em;
+  display: block;
+}
+.emphasis{
+  font-size: 1.1em;
 }
 p{
   font-size: 0.8em;
+}
+.initOffer{
+  margin-top: 1em;
+  line-height: 200%;
 }
 h3{
   font-size: 1em;
@@ -39,6 +52,7 @@ h3{
     font-size: 1.8em;
   }
   margin-bottom: 10px;
+  display: block;
 
 }
 .pricingText{
@@ -100,15 +114,36 @@ p{
  @media only screen and (min-width: 665px) {
   .cta{
     display: none;
-
+  }
+  .special-offer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
  }
 @media only screen and (min-width: 1024px) {
   .cta{
     display: none;
   }
+  .initOffer{
+    margin-top: 3.5em;
+    line-height: 300%;
+  }
   .special-offer{
-    font-size: 1.3em;color:blue;margin-bottom: 1em;
+    font-size: 1.3em;
+    margin-right: 10px;
+    display: contents;
+    
+  }
+  .divider{
+    font-size: 1.3em;
+  }
+  .dividerBr{
+    font-size: 1.3em;
+   
+  }
+  .emphasis{
+    font-size: 1.5em;
   }
   .itemsList{
     display: flex;
