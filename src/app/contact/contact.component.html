@@ -33,107 +33,38 @@
         <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
         <a href="" style="color: white; text-decoration:none;" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/irelandwebdesigns/15min'});return false;">Book A 15 Minute Consultation</a>
         <!-- Calendly link widget end --></a>
-    <form id="contact" action="https://mailthis.to/info@irelandwebdesigns.ie"
-    method="POST" encType="multipart/form-data" >
+        <form
+        action="https://formspree.io/f/mrgdywyg"
+        method="POST"
+        id="contact"
+      >
       <div class="input-group">
-        <label for="name">Full Name</label>
-        <input
-          id="name"
-          aria-label="name"
-          class="input1"
-          name="name"
-          placeholder="Full Name"
-          type="text"
-          tabindex="1"
-          required
-        />
-        <div aria-hidden="true" class="hover-box"></div>
-      </div>
-
-      <div class="input-group">
-        <label for="email">Email</label>
-        <input
-          id="email"
-          aria-label="email"
-          class="input1 right"
-          name="email"
-          placeholder="Email Address"
-          type="email"
-          tabindex="2"
-          required
-        />
-        <div aria-hidden="true" class="hover-box"></div>
-      </div>
-
-      <div class="input-group">
-        <label for="phone">Phone</label>
-        <input
-          id="phone"
-          aria-label="phone number"
-          class="input1"
-          name="phone"
-          placeholder="Phone Number"
-          type="tel"
-          tabindex="3"
-          required
-        />
-        <div aria-hidden="true" class="hover-box"></div>
+        <label>
+            Your email:
+          </label>
+          <input type="email" name="email">
       </div>
       <div class="input-group">
-        <label for="location">Location</label>
-        <input
-          id="location"
-          aria-label="location"
-          class="input1 right"
-          name="location"
-          placeholder="Your Location"
-          type="text"
-          tabindex="4"
-          required
-        />
-        <div aria-hidden="true" class="hover-box"></div>
+        <label>
+            Name:
+          </label>
+          <input type="text" name = "name">
       </div>
       <div class="input-group">
-        <label for="how">Brief description of your business</label>
-        <input
-          id="how"
-          aria-label="how did you hear about us"
-          name="hear"
-          placeholder="Describe your business + How long you have been operating"
-          type="text"
-          tabindex="5"
-          required
-        />
-        <div aria-hidden="true" class="hover-box"></div>
+        <label>
+            Location:
+          </label>
+          <input type="text" name = "location">
       </div>
-      <div class="input-group textarea">
-        <label for="message">Where would you like to improve your business</label>
-        <textarea
-          id="message"
-          aria-label="write your message"
-          name="message"
-          placeholder="Tell us about what you need help with - Lead gen, Business Systems, Visibility etc"
-          tabindex="6"
-          required
-        ></textarea>
-        <div aria-hidden="true" class="hover-box"></div>
+      <div class="input-group">
+        <label>
+            Brief description of your business:
+          </label>
+          <textarea name="message"></textarea>
       </div>
-      <input type="hidden" name="_subject" value="Contact form submitted">
-      <input type="hidden" name="_honeypot" value="">
-      <input type="hidden" name="_confirmation" value="">
-      <p class="form-submit">
-        <button
-          name="submit"
-          type="submit"
-          id="contact-submit"
-          class="button-6"
-          value="Send"
-          data-submit="...Sending"
-        >
-          Submit
-        </button>
-      </p>
-    </form>
+        <!-- your other form fields go here -->
+        <button type="submit" class="button-6">Send</button>
+      </form>
   </div>
   <div class="contact-right">
     <div class="info-group">
