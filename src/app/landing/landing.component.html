@@ -24,19 +24,12 @@
       </li>
       <li>
         <span
-          ><a href="/about-us"
-            >About us</a
+          ><a href="/web-design-ireland"
+            >Web Design</a
           ></span
         >
       </li>
       
-      <li>
-        <span
-        (click)="scroll(portfolio)" ><a
-            >Projects</a
-          ></span
-        >
-      </li>
       <!--
       <li>
         <span
@@ -75,7 +68,7 @@
 <div class="navListMenu" *ngIf="showDropDown">
   <ul class="navListPhone">
     <li><a href="/about-us">Home</a></li>
-    <li><a href="/about-us">About</a></li>
+    <li><a href="/web-design-ireland">Web Design</a></li>
     <!--
     <li><a href="/reviews">Reviews</a></li>
     -->
@@ -88,14 +81,16 @@
   <div class="hero-content">
     <div class="heroText">
       <h1 id="home-h" class="home-h">
-        Small Business Web Design + Development
+        Website Design Ireland
       </h1>
       <p>
-        No page builders or WordPress - We offer 100% hand-coded websites with superior results starting at €149/mo
+         No page builders or WordPress - We offer 100% hand-coded websites with superior results starting at €149/mo
       </p>
-      <button class="button-6" onclick="location.href='/contact'" type="button" style="cursor:pointer; margin-bottom: 3em;">
-        GET IN TOUCH
-      </button>
+      <a class="button-6" style="margin-bottom: 2em;" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/irelandwebdesigns/15min'});return false;"><!-- Calendly link widget begin -->
+        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+        <a href="" style="color: white; text-decoration:none;" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/irelandwebdesigns/15min'});return false;">BOOK A FREE CONSULTATION</a>
+        <!-- Calendly link widget end --></a>
     </div>
     <picture>
       <source
@@ -119,7 +114,220 @@
 </section>
 <app-services></app-services>
 <app-about></app-about>
+<section id = "why-choose-us">
+  <div class="articleBlock">
+    <div class="part1">
+      <div class="imageA">
+        <picture>
+          <source
+            media="(max-width: 600px)"
+            srcset="/assets/images/mockup.png"
+            width="300px"
+            
+          />
+          <source media="(max-width: 1280px)" srcset="/assets/images/mockup.png" width="400px"/>
+    
+          <source media="(min-width: 1281px)" srcset="/assets/images/mockup.png"/>
+          <img
+            aria-hidden="true"
+            decoding="async"
+            src="/assets/images/mockup.png"
+            alt="code"
+            width="600px"
+          />
+        </picture>
+      </div>
+      <div class="text">
+        <h2>IS WEB DESIGN<span style="color: blue;"> IMPORTANT?</span></h2>
+        <p>When landing on a website, most users will judge a businesses reliability based on their impressions of the businesses website design. A poorly designed website can make people question your legitimacy and lead to less conversions.
+          Professional web design is important to maximise the benefits a website can bring to your business.
+        </p>
+      </div>
+    </div>
+    <div class="part2">
+      <div class="imageA">
+        <picture>
+          <source
+            media="(max-width: 600px)"
+            srcset="/assets/images/code1.png"
+            width="300px"
+            
+          />
+          <source media="(max-width: 1280px)" srcset="/assets/images/code1.png" width="400px"/>
+    
+          <source media="(min-width: 1281px)" srcset="/assets/images/code1.png"/>
+          <img
+            aria-hidden="true"
+            decoding="async"
+            src="/assets/images/code1.png"
+            alt="hand-coded-website"
+            width="600px"
+          />
+        </picture>
+      </div>
+      <div class="text">
+        <h2>WHY ARE HAND-CODED WEBSITES <span style="color: blue;">THE BEST</span></h2>
+      <p>Page builders such as Wordpress or Wix produce websites with bloated,messy and poorly formatted code. In May 2021 Google launched its core vitals update. This means mobile performance and page speed now have significantly more impact on search ranking.
+        <b>This is where we shine</b>. All of our websites are hand-coded and built line by line with a purpose, there is no unecessary code. What this means is that slowly overtime your page will <b>rank higher</b> then competitors using page builders which will bring more customers to your website.
+        These customers are then converted into sales using built in structures called conversion funnels.
+      </p>
+      </div>
+    </div>
+    <div class="part3">
+      <div class="imageA">
+        <picture>
+          <source
+            media="(max-width: 600px)"
+            srcset="/assets/images/meeting.png"
+            width="300px"
+            
+          />
+          <source media="(max-width: 1280px)" srcset="/assets/images/meeting.png" width="400px"/>
+    
+          <source media="(min-width: 1281px)" srcset="/assets/images/meeting.png"/>
+          <img
+            aria-hidden="true"
+            decoding="async"
+            src="/assets/images/meeting.png"
+            alt="meeting"
+            width="600px"
+          />
+          </picture>
+      </div>
+      <div class="text">
+        <h2><span style="color: blue;">LIFETIME</span> SUPPORT</h2>
+        <p>We will periodically update your website to ensure your website is always kept up to modern web design standards. You can reach out to us at any time to request changes, ask questions or simply look for support for any of your online issues and we will provide you with monthly peformance tracking analytics. Web Design Dublin, Cork and all of Ireland - we want to give business owners the best value for their buck </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id = "process">
+  <div class="descTitle">
+    <div class="descTitleText">
+      <h2>WEB DESIGN IRELAND : <span style="color:blue;margin-right:5px">OUR PROCESS</span></h2>
+    </div>
+    <div class="dash"></div>
+     
+  </div>
+  <div class="articleBlock">
+    <div class="part1">
+      <div class="imageA">
+        <picture>
+          <source
+            media="(max-width: 600px)"
+            srcset="/assets/images/discovery.webp"
+            width="300px"
+            
+          />
+          <source media="(max-width: 1280px)" srcset="/assets/images/discovery.webp" width="400px"/>
+    
+          <source media="(min-width: 1281px)" srcset="/assets/images/discovery.webp"/>
+          <img
+            aria-hidden="true"
+            decoding="async"
+            src="/assets/images/discovery.webp"
+            alt="hand-coded-website"
+            width="600px"
+          />
+        </picture>
+      </div>
+      <div class="text">
+        <h2><span style="color: blue;"> DISCOVERY</span></h2>
+        <p>
+          Before we start coding your new website there is some steps we need to make to ensure we produce the best product.
+          We need to perform an indepth look into your business & discuss your business needs and goals so we can set a plan
+          meet your high level goals and expectations. To jumpstart this process we will ask you to fill in a questionarre and possibly
+          jump on a call with us to ensure we are the same page. You can chose to work with us to write the copy for your website or we
+          can use a professional copywriter to write engaging content that will picked up by search engines
+
+        </p>
+      </div>
+    </div>
+    <div class="part2">
+      <div class="imageA">
+        <picture>
+          <source
+            media="(max-width: 600px)"
+            srcset="/assets/images/strategy.webp"
+            width="300px"
+            
+          />
+          <source media="(max-width: 1280px)" srcset="/assets/images/strategy.webp" width="400px"/>
+    
+          <source media="(min-width: 1281px)" srcset="/assets/images/strategy.webp"/>
+          <img
+            aria-hidden="true"
+            decoding="async"
+            src="/assets/images/strategy.webp"
+            alt="hand-coded-website"
+            width="600px"
+          />
+        </picture>
+      </div>
+      <div class="text">
+        <h2><span style="color: blue;">STRATEGY</span></h2>
+      <p>
+        Once we have completed the discovery stage and have set clear expectations for the goal of the web design, we will produce a sitemap with the structure of the web pages.
+        During this stage we will identify problems & solutions and also offer our best recommendations
+      </p>
+      </div>
+    </div>
+    <div class="part3">
+      <div class="imageA">
+        <picture>
+          <source
+            media="(max-width: 600px)"
+            srcset="/assets/images/code1.png"
+            width="300px"
+            
+          />
+          <source media="(max-width: 1280px)" srcset="/assets/images/code1.png" width="400px"/>
+    
+          <source media="(min-width: 1281px)" srcset="/assets/images/code1.png"/>
+          <img
+            aria-hidden="true"
+            decoding="async"
+            src="/assets/images/code1.png"
+            alt="hand-coded-website"
+            width="600px"
+          />
+        </picture>
+      </div>
+      <div class="text">
+        <h2><span style="color: blue;">WEB DESIGN & WEB DEVELOPMENT</span></h2>
+        <p>This is the stage where we hand code your web design solution. We will provide you with a website that satisfies <b>Google's core metrics</b> and provides customers with a smooth experience designed to convert into sales for your business</p>
+      </div>
+    </div>
+    <div class="part4">
+      <div class="imageA">
+        <picture>
+          <source
+            media="(max-width: 600px)"
+            srcset="/assets/images/mockup.png"
+            width="500px"
+            
+          />
+          <source media="(max-width: 1280px)" srcset="/assets/images/mockup.png" width="600px"/>
+    
+          <source media="(min-width: 1281px)" srcset="/assets/images/mockup.png"/>
+          <img
+            aria-hidden="true"
+            decoding="async"
+            src="/assets/images/mockup.png"
+            alt="cabinets"
+            width="900px"
+          />
+        </picture>
+      </div>
+      <div class="text">
+        <h2><span style="color: blue;">LAUNCH</span></h2>
+        <p>Once design and development is complete we will provide your with a test domain to ensure you are happy with the look and feel of the website and give you an opportunity to request edits and changes. Once you confirm you are ready to launch, we will host your website & set up your new website with Analytics tracking. Post launch we will provide unlimited edits and support so your website is always up to date. </p>
+      </div>
+    </div>
+  </div>
+</section>
+<app-pricing></app-pricing>
 <app-blog></app-blog>
 <div id="portfolio" #portfolio><app-portfolio></app-portfolio></div>
-<app-pricing></app-pricing>
+
 

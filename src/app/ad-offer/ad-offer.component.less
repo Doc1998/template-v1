@@ -1,5 +1,30 @@
 /* Mobile */
 @media only screen and (min-width: 0em) {
+    .articleBlock{
+        display: flex;
+        flex-direction: column;
+        
+        .part1,.part2,.part3,.part4{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding-bottom: 42PX;
+          
+          h2{
+            font-size: 1em;
+            padding-left: 42px;
+            padding-right: 21px;
+          }
+          p{
+            font-family: poppins-light;
+            font-size: 0.8em;
+            padding-left: 42px;
+            padding-right: 21px;
+          }
+        }
+       }
+       
     .button-6{
         width: 100%;
         font-size: 1em;
@@ -88,6 +113,42 @@
   
   /* Small Desktop */
   @media only screen and (min-width: 1280px) {
+    .articleBlock{
+        display: flex;
+        width: 80vw;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        .part1,.part2,.part3,.part4{
+          display: flex;
+          flex-direction: row-reverse;
+          justify-content: center;
+          position: relative;
+          align-items: center;
+          padding-bottom: 42PX;
+          margin-top: 5vw;
+          h2{
+            font-size: 1.2em;
+            padding-left: 42px;
+            padding-right: 21px;
+          }
+          p{
+            font-family: poppins-light;
+            font-size: 1em;
+            padding-left: 42px;
+            padding-right: 21px;
+          }
+        }
+        .part2,.part4{
+          flex-direction: row !important;
+        }
+        .imageA{
+            z-index: 1;
+        }
+
+       }
+       .contact-right{
+        z-index: 100;
+       }
     #int-hero {
       min-height: 18.75em;
       height: auto;
