@@ -29,15 +29,15 @@ const routes: Routes = [
   { path: "locations/dublin-web-design", component: HomeDublinComponent, data: {title : 'Dublin Web Design | Small business Web Development'} },
   { path: "locations/limerick-web-design", component: HomeLimerickComponent, data: {title : 'Limerick Web Design | Small business Web Development'} },
   { path: "web-design-ireland", component: AboutUsComponent, data: {title : 'About us | Small business Web Development | Ireland Web Designs'} },
-  { path: "reviews", component: ReviewsComponent, data: {title : 'Reviews | Small business Web Development | Ireland Web Designs'}},
-  { path: "projects", component: ProjectsComponent,  data: {title : 'Projects | Small business Web Development | Ireland Web Designs'}},
-  { path: "contact", component: AdOfferComponent, data: {title : 'Contact | Small business Web Development | Ireland Web Designs'}},
-  { path: "articles", component: ArticlesComponent, data: {title : 'Articles | Small business Web Development | Ireland Web Designs'}},
-  { path: "special-offer", component: AdOfferComponent, data: {title : 'Special Offer | Small business Web Development | Ireland Web Designs'}},
-  { path: "articles/2022/the-importance-of-seo-for-your-business", component: ArticleOneComponent, data: {title : 'The Importance Of SEO For Your Business | Small business Web Development | Ireland Web Designs'}},
-  { path: "articles/2022/wordpress-is-bad-for-SEO-and-customer-experience", component: ArticleTwoComponent, data: {title : 'Wordpress is Bad for SEO and Customer Experience | Small business Web Development | Ireland Web Designs'}},
+  { path: "reviews", component: ReviewsComponent, data: {title : 'Reviews | Small business Web Development | Web Design Ireland'}},
+  { path: "projects", component: ProjectsComponent,  data: {title : 'Projects | Small business Web Development | Web Design Ireland'}},
+  { path: "contact", component: AdOfferComponent, data: {title : 'Contact | Small business Web Development | Web Design Irelands'}},
+  { path: "articles", component: ArticlesComponent, data: {title : 'Articles | Small business Web Development | Web Design Ireland'}},
+  { path: "special-offer", component: AdOfferComponent, data: {title : 'Special Offer | Small business Web Development | Web Design Ireland'}},
+  { path: "articles/2022/the-importance-of-seo-for-your-business", component: ArticleOneComponent, data: {title : 'The Importance Of SEO For Your Business | Small business Web Development | Web Design Ireland'}},
+  { path: "articles/2022/wordpress-is-bad-for-SEO-and-customer-experience", component: ArticleTwoComponent, data: {title : 'Wordpress is Bad for SEO and Customer Experience | Small business Web Development | Web Design Ireland'}},
   
-  { path: "articles/2022/ireland-web-design-vs-web-development-what-is-the-difference", component: ArticleFourWebDesignVsWebDevComponent, data: {title : 'Ireland Web Design vs Web Development | Small business Web Development | Ireland Web Designs'}}
+  { path: "articles/2022/ireland-web-design-vs-web-development-what-is-the-difference", component: ArticleFourWebDesignVsWebDevComponent, data: {title : 'Ireland Web Design vs Web Development | Small business Web Development | Web Design Ireland'}}
 
 
 
