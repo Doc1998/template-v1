@@ -20,7 +20,8 @@ import { ReviewsComponent } from "./reviews/reviews.component";
 
 const routes: Routes = [
   { path: "home", component: LandingComponent, data: {title : 'Web Design Ireland | Small business Web Development'} },
-  { path: "", component: LandingComponent },
+  { path: "", component: LandingComponent, data: {title : 'Web Design Ireland | Small business Web Development'}  },
+  { path: "web-design-ireland", component: LandingComponent, data: {title : 'Web Design Ireland | Small business Web Development'}  },
   { path: "standard", component: OfferComponent },
   { path: "standard-blog", component: OfferTwoComponent },
   { path: "locations/cork-web-design", component: HomeCorkComponent, data: {title : 'Cork Web Design | Small business Web Development'} },

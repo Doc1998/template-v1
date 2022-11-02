@@ -1,5 +1,54 @@
 
 @media only screen and (min-width: 0px) {
+  .why-us{
+    margin-top: 5em;
+    background-color: white;
+    h1{
+      font-size: 1.3em;
+    }
+  }
+  #process{
+    margin-top: 5vw;
+    padding-top: 2vw;
+    background-color: aliceblue;
+  }
+
+  .reasons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .child{
+      margin-top: 2em;
+      display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+    }
+    padding: 1em;
+    p{
+      font-family: poppins-light;
+      margin-top: 1.5em;
+    }
+    h2{
+      margin-top: 1.5em;
+      font-size: 1.3em;
+      text-align: center;
+    }
+    h2::after {
+      content: '';
+      position: absolute;
+      display: block;
+      height: 0.125em;
+      width: 1.515625em;
+      background: var(--primary);
+      opacity: 1;
+      margin-top: 10px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+  }
+  }
    .articleBlock{
     display: flex;
     flex-direction: column;
@@ -43,16 +92,19 @@
     flex-direction: row;
     text-align: center;
     font-family: poppins-light;
+    margin-bottom: 2em;
+    padding-top: 2em;
     h1{
+      font-size: 1.2em;
+    }
+    a{
       font-size: 1em;
     }
   }
   .descTitle h2 {
     margin: 0;
   }
-  #process{
-    margin-top: 5vw;
-  }
+
     #hero{
         height: auto;
         width: 100%;
@@ -164,6 +216,34 @@
     }
 }
 @media only screen and (min-width: 1281px) {
+  .reasons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+
+    p{
+      font-family: poppins-light;
+      margin-top: 1.5em;
+    }
+    h2{
+      margin-top: 1.5em;
+      font-size: 1.2em;
+      text-align: center;
+    }
+    h2::after{
+      display: none;
+    }
+    .child{
+      width: 50%;
+      .inner{
+        margin-left: 15%;
+        margin-right: 15%;
+      }
+    }
+  }
   .dash {
     width: 160px;
     border-bottom: 1px dashed blue;
