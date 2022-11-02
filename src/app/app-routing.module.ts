@@ -2,6 +2,7 @@ import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { AboutUsComponent } from "./about-us/about-us.component";
 import { AdOfferComponent } from "./ad-offer/ad-offer.component";
+import { ArticleFourWebDesignVsWebDevComponent } from "./article-four-web-design-vs-web-dev/article-four-web-design-vs-web-dev.component";
 import { ArticleOneComponent } from "./article-one/article-one.component";
 import { ArticleThreeComponent } from "./article-three/article-three.component";
 import { ArticleTwoComponent } from "./article-two/article-two.component";
@@ -34,7 +35,8 @@ const routes: Routes = [
   { path: "special-offer", component: AdOfferComponent, data: {title : 'Special Offer | Small business Web Development | Ireland Web Designs'}},
   { path: "articles/2022/the-importance-of-seo-for-your-business", component: ArticleOneComponent, data: {title : 'The Importance Of SEO For Your Business | Small business Web Development | Ireland Web Designs'}},
   { path: "articles/2022/wordpress-is-bad-for-SEO-and-customer-experience", component: ArticleTwoComponent, data: {title : 'Wordpress is Bad for SEO and Customer Experience | Small business Web Development | Ireland Web Designs'}},
-  { path: "articles/2022/the-ultimate-guide-to-using-a-website-to-boost-your-sales", component: ArticleThreeComponent, data: {title : 'The Ultimate Guide to Using a Website to Boost Your Sales | Small business Web Development | Ireland Web Designs'}}
+  
+  { path: "articles/2022/ireland-web-design-vs-web-development-what-is-the-difference", component: ArticleFourWebDesignVsWebDevComponent, data: {title : 'Ireland Web Design vs Web Development | Small business Web Development | Ireland Web Designs'}}
 
 
 

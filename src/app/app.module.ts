@@ -31,7 +31,9 @@ import { HomeGalwayComponent } from './home-galway/home-galway.component';
 import { OfferComponent } from './offer/offer.component';
 import { OfferTwoComponent } from './offer-two/offer-two.component';
 import { AdOfferComponent } from './ad-offer/ad-offer.component';
-import { VideoLayerComponent } from './video-layer/video-layer.component';  
+import { VideoLayerComponent } from './video-layer/video-layer.component';
+import { ArticleFourWebDesignVsWebDevComponent } from './article-four-web-design-vs-web-dev/article-four-web-design-vs-web-dev.component';
+import { FeaturedArticleComponent } from './featured-article/featured-article.component';  
 
 @NgModule({
   declarations: [
@@ -63,7 +65,9 @@ import { VideoLayerComponent } from './video-layer/video-layer.component';
     OfferComponent,
     OfferTwoComponent,
     AdOfferComponent,
-    VideoLayerComponent
+    VideoLayerComponent,
+    ArticleFourWebDesignVsWebDevComponent,
+    FeaturedArticleComponent
   ],
   imports: [
     BrowserModule,
