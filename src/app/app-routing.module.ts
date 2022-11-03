@@ -29,7 +29,6 @@ const routes: Routes = [
   { path: "locations/dublin-web-design", component: HomeDublinComponent, data: {title : 'Dublin Web Design | Small business Web Development'} },
   { path: "locations/limerick-web-design", component: HomeLimerickComponent, data: {title : 'Limerick Web Design | Small business Web Development'} },
   { path: "web-design-ireland", component: AboutUsComponent, data: {title : 'About us | Small business Web Development | Ireland Web Designs'} },
-  { path: "reviews", component: ReviewsComponent, data: {title : 'Reviews | Small business Web Development | Web Design Ireland'}},
   { path: "projects", component: ProjectsComponent,  data: {title : 'Projects | Small business Web Development | Web Design Ireland'}},
   { path: "contact", component: AdOfferComponent, data: {title : 'Contact | Small business Web Development | Web Design Irelands'}},
   { path: "articles", component: ArticlesComponent, data: {title : 'Articles | Small business Web Development | Web Design Ireland'}},
