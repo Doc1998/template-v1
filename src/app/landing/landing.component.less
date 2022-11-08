@@ -12,6 +12,34 @@
     padding-top: 2vw;
     background-color: aliceblue;
   }
+  /* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white !important;
+  min-width: 100vw;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  li:nth-child(1),
+  li:nth-child(3) {
+    background-color: white(252, 238, 238);
+  }
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+  font-size: .7em !important;
+}
+
+
 
   .reasons{
     display: flex;
@@ -356,9 +384,13 @@ header {
     justify-content: space-around;
     box-shadow: -5px 0 22px -1px rgb(0 0 0 / 15%);
     font-family: poppins-bold;
-    span:hover {
-      border-bottom: 5px solid #ffba19;
-      padding-bottom: 5px;
+    .navList {
+      li {
+        span:hover {
+          border-bottom: 5px solid #ffba19;
+          padding-bottom: 5px;
+        }
+      }
     }
   }
   .noColor {
@@ -544,7 +576,7 @@ header {
     }
   }
   .navListMenu {
-    height: 18em;
+    height: 16em;
     width: 100%;
     position: fixed;
     z-index: 10;
@@ -560,12 +592,12 @@ header {
       justify-content: space-around;
       width: 100%;
       height: 6em;
-      margin-top: 5em;
+      margin-top: 4em;
       a {
         height: 100%;
         color: black !important;
-        margin-top: 0.25em;
-        margin-bottom: 0.25em;
+        padding-top: 0.25em;
+        padding-bottom: 0.25em;
         font-size: 1em;
       }
       li {
@@ -589,6 +621,44 @@ header {
   }
 }
 @media only screen and (min-width: 1024px) {
+
+   /* Dropdown content (hidden by default) */
+.dropdown-content {
+  visibility: hidden;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top: 4px;
+  transition: .4s ease;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  width: 300px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: .4em;
+}
+.dropdown-content li{
+  margin: 0;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  visibility: visible;
+}
+
   header {
     box-shadow: -5px 0 22px -1px rgb(0 0 0 / 15%);
     padding-top: 20px;
@@ -596,7 +666,7 @@ header {
   }
   
   .navList {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   .noColor {
     background-color: white;
@@ -605,10 +675,5 @@ header {
   }
   .color {
     color: #000 ;
-    span:hover {
-      border-bottom: 5px solid #ffba19 ;
-      padding-bottom: 5px;
-      
-    }
   }
 }

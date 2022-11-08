@@ -37,11 +37,14 @@
         >
       </li>
       <li>
-        <span
-          ><a href="/home#why-choose-us" [ngClass]="colorHeader? 'color':'noColor'"
-            >Web Design</a
-          ></span
-        >
+        <div class="dropdown">
+          <a href="/web-design-ireland" style="color: white;">Services ⮟</a>
+          <div class="dropdown-content">
+            <li><a href="#">WEB DESIGN LIFETIME SUPPORT</a></li>
+            <li><a href="#">STAND ALONE WEBSITE</a></li>
+            <li><a href="#">WEB DESIGN LIFETIME SUPPORT + BLOGGING</a></li>
+          </div>
+        </div>
       </li>
       
       <!--
@@ -82,7 +85,17 @@
 <div class="navListMenu" *ngIf="showDropDown">
   <ul class="navListPhone">
     <li><a href="/home">Home</a></li>
-    <li><a href="/home#why-choose-us">Web Design</a></li>
+       
+    <li>
+      <div class="dropdown">
+        <a (click) = "dropDownServices()">Services ⮟</a>
+        <div class="dropdown-content" *ngIf = "showServices">
+          <li><a href="#">WEB DESIGN LIFETIME SUPPORT</a></li>
+          <li><a href="#">STAND ALONE WEBSITE</a></li>
+          <li><a href="#">WEB DESIGN LIFETIME SUPPORT + BLOGGING</a></li>
+        </div>
+      </div>
+    </li>
     <!--
     <li><a href="/reviews">Reviews</a></li>
     -->    

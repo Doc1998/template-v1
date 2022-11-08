@@ -10,7 +10,8 @@ export class HeaderComponent implements OnInit {
   colorHeader:boolean = false;
   showDropDown:boolean = false;
   scrWidth = window.innerWidth;
-  phoneView:boolean = true
+  phoneView:boolean = true;
+  showServices:boolean = false;
   constructor() { }
 
   ngOnInit(): void {
@@ -48,6 +49,9 @@ export class HeaderComponent implements OnInit {
       console.log('no')
       target.classList.add('clicked');
     }
+ }
+ dropDownServices(){
+  this.showServices = !this.showServices
  }
 
 }

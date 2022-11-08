@@ -23,11 +23,14 @@
         >
       </li>
       <li>
-        <span
-          ><a href="/home#why-choose-us"
-            >Web Design</a
-          ></span
-        >
+        <div class="dropdown">
+          <a href="/web-design-ireland">Services ⮟</a>
+          <div class="dropdown-content">
+            <li><a href="#">WEB DESIGN LIFETIME SUPPORT</a></li>
+            <li><a href="#">STAND ALONE WEBSITE</a></li>
+            <li><a href="#">WEB DESIGN LIFETIME SUPPORT + BLOGGING</a></li>
+          </div>
+        </div>
       </li>
       
       <!--
@@ -68,7 +71,17 @@
 <div class="navListMenu" *ngIf="showDropDown">
   <ul class="navListPhone">
     <li><a href="/about-us">Home</a></li>
-    <li><a href="/web-design-ireland">Web Design</a></li>
+    
+    <li>
+      <div class="dropdown">
+        <a (click) = "dropDownServices()"> Services <span *ngIf = "!showServices">⮟</span> <span *ngIf = "showServices">⮝</span></a>
+        <div class="dropdown-content" *ngIf = "showServices">
+          <li><a href="#">WEB DESIGN LIFETIME SUPPORT</a></li>
+          <li><a href="#">STAND ALONE WEBSITE</a></li>
+          <li><a href="#">WEB DESIGN LIFETIME SUPPORT + BLOGGING</a></li>
+        </div>
+      </div>
+    </li>
     <!--
     <li><a href="/reviews">Reviews</a></li>
     -->
@@ -113,6 +126,7 @@
 </section>
 <app-services></app-services>
 <app-about></app-about>
+<app-pricing></app-pricing>
 <section id = "why-choose-us">
   <div class="articleBlock">
     <div class="part1">
@@ -452,7 +466,6 @@
   </div>
 </section>
 <app-featured-article></app-featured-article>
-<app-pricing></app-pricing>
 <app-blog></app-blog>
 <div id="portfolio" #portfolio><app-portfolio></app-portfolio></div>
 

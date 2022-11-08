@@ -9,6 +9,7 @@ import { Meta } from '@angular/platform-browser';
 export class LandingComponent implements OnInit {
   colorHeader:boolean = false;
   showDropDown:boolean = false;
+  showServices:boolean = false;
   scrWidth = window.innerWidth;
   phoneView:boolean = true
   constructor(private meta: Meta) { }
@@ -56,6 +57,9 @@ export class LandingComponent implements OnInit {
       console.log('no')
       target.classList.add('clicked');
     }
+ }
+ dropDownServices(){
+  this.showServices = !this.showServices
  }
   scroll(el: HTMLElement){
     el.scrollIntoView({ behavior: 'smooth', block: 'center' })

@@ -1,16 +1,10 @@
 {
   "hosting": {
-    "public": "dist/template-v1",
+    "public": "dist/template-v1/browser",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-    ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
     ]
   }
 }

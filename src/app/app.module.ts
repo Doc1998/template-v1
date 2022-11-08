@@ -70,7 +70,7 @@ import { FeaturedArticleComponent } from './featured-article/featured-article.co
     FeaturedArticleComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule
   ],
   providers: [],
