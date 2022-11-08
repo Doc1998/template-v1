@@ -33,7 +33,10 @@ import { OfferTwoComponent } from './offer-two/offer-two.component';
 import { AdOfferComponent } from './ad-offer/ad-offer.component';
 import { VideoLayerComponent } from './video-layer/video-layer.component';
 import { ArticleFourWebDesignVsWebDevComponent } from './article-four-web-design-vs-web-dev/article-four-web-design-vs-web-dev.component';
-import { FeaturedArticleComponent } from './featured-article/featured-article.component';  
+import { FeaturedArticleComponent } from './featured-article/featured-article.component';
+import { WebDesignStandardComponent } from './web-design-standard/web-design-standard.component';
+import { WebDesignBlogComponent } from './web-design-blog/web-design-blog.component';
+import { WebsiteStandaloneComponent } from './website-standalone/website-standalone.component';  
 
 @NgModule({
   declarations: [
@@ -67,7 +70,10 @@ import { FeaturedArticleComponent } from './featured-article/featured-article.co
     AdOfferComponent,
     VideoLayerComponent,
     ArticleFourWebDesignVsWebDevComponent,
-    FeaturedArticleComponent
+    FeaturedArticleComponent,
+    WebDesignStandardComponent,
+    WebDesignBlogComponent,
+    WebsiteStandaloneComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

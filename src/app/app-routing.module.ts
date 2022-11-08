@@ -17,11 +17,15 @@ import { OfferTwoComponent } from "./offer-two/offer-two.component";
 import { OfferComponent } from "./offer/offer.component";
 import { ProjectsComponent } from "./projects/projects.component";
 import { ReviewsComponent } from "./reviews/reviews.component";
+import { WebDesignStandardComponent } from "./web-design-standard/web-design-standard.component";
 
 const routes: Routes = [
   { path: "home", component: LandingComponent, data: {title : 'Web Design Ireland | Small business Web Development'} },
   { path: "", component: LandingComponent, data: {title : 'Web Design Ireland | Small business Web Development'}  },
   { path: "web-design-ireland", component: LandingComponent, data: {title : 'Web Design Ireland | Small business Web Development'}  },
+  { path: "web-design-standard", component: WebDesignStandardComponent, data: {title : 'Web Design Lifetime Support | Web Design Ireland | Small business Web Development'}  },
+  { path: "web-design-blog", component: WebDesignStandardComponent, data: {title : 'Web Design Lifetime Support & Blogging | Web Design Ireland | Small business Web Development'}  },
+  { path: "web-design-standalone", component: WebDesignStandardComponent, data: {title : 'Standalone Website | Web Design Ireland | Small business Web Development'}  },
   { path: "standard", component: OfferComponent },
   { path: "standard-blog", component: OfferTwoComponent },
   { path: "locations/cork-web-design", component: HomeCorkComponent, data: {title : 'Cork Web Design | Small business Web Development'} },
@@ -30,7 +34,7 @@ const routes: Routes = [
   { path: "locations/limerick-web-design", component: HomeLimerickComponent, data: {title : 'Limerick Web Design | Small business Web Development'} },
   { path: "web-design-ireland", component: AboutUsComponent, data: {title : 'About us | Small business Web Development | Ireland Web Designs'} },
   { path: "projects", component: ProjectsComponent,  data: {title : 'Projects | Small business Web Development | Web Design Ireland'}},
-  { path: "contact", component: AdOfferComponent, data: {title : 'Contact | Small business Web Development | Web Design Irelands'}},
+  { path: "contact", component: ContactComponent, data: {title : 'Contact | Small business Web Development | Web Design Irelands'}},
   { path: "articles", component: ArticlesComponent, data: {title : 'Articles | Small business Web Development | Web Design Ireland'}},
   { path: "special-offer", component: AdOfferComponent, data: {title : 'Special Offer | Small business Web Development | Web Design Ireland'}},
   { path: "articles/2022/the-importance-of-seo-for-your-business", component: ArticleOneComponent, data: {title : 'The Importance Of SEO For Your Business | Small business Web Development | Web Design Ireland'}},

@@ -272,6 +272,8 @@
   z-index: 1;
   margin-top: 4px;
   transition: .4s ease;
+  border: 1px solid white;
+  border-radius: 6px;
 }
 
 /* Links inside the dropdown */
@@ -284,6 +286,7 @@
   display: block;
   text-align: left;
   font-size: .5em !important;
+  font-family: poppins;
 }
 .dropdown-content li{
   margin: 0;
@@ -309,6 +312,14 @@
   .noColor {
     background-color: transparent;
     color: white;
+    .navList{
+      li {
+        span:hover {
+          border-bottom: 5px solid #ffba19;
+          padding-bottom: 5px;
+        }
+      }
+    }
   }
   .color {
     color: #000 ;
