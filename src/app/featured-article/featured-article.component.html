@@ -9,7 +9,23 @@
         <div class="blog__post container">
             <div class="blog__post--header">
                 <div class="imgContainer">
-                    <img aria-label="web design" src = "/assets/images/webdesign-webdev.webp" class="main-image">
+                    <picture>
+                        <source
+                          media="(max-width: 600px)"
+                          srcset="/assets/images/webdesign-webdev-small.webp"
+                          width="300px"
+                          
+                        />
+                        <source media="(max-width: 1280px)" srcset="/assets/images/webdesign-webdev.webp" width="350px"/>
+                  
+                        <source media="(min-width: 1281px)" srcset="/assets/images/webdesign-webdev.webp" width="900px"/>
+                        <img
+                          aria-hidden="true"
+                          decoding="async"
+                          src = "/assets/images/webdesign-webdev.webp"
+                          alt="hand-coded-website"
+                        />
+                      </picture>
                 </div>
                 <h1>Web Design vs Web Development</h1>
                 <div class="blog__post--info">
