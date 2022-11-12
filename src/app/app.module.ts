@@ -36,7 +36,8 @@ import { ArticleFourWebDesignVsWebDevComponent } from './article-four-web-design
 import { FeaturedArticleComponent } from './featured-article/featured-article.component';
 import { WebDesignStandardComponent } from './web-design-standard/web-design-standard.component';
 import { WebDesignBlogComponent } from './web-design-blog/web-design-blog.component';
-import { WebsiteStandaloneComponent } from './website-standalone/website-standalone.component';  
+import { WebsiteStandaloneComponent } from './website-standalone/website-standalone.component';
+import { ArticleFiveComponent } from './article-five/article-five.component';  
 
 @NgModule({
   declarations: [
@@ -73,7 +74,8 @@ import { WebsiteStandaloneComponent } from './website-standalone/website-standal
     FeaturedArticleComponent,
     WebDesignStandardComponent,
     WebDesignBlogComponent,
-    WebsiteStandaloneComponent
+    WebsiteStandaloneComponent,
+    ArticleFiveComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
