@@ -1,29 +1,14 @@
 <header
   #navigation
-  (scroll)="onScroll()"
-  [ngClass]="colorHeader? 'color':'noColor'"
 >
   <div class="logo">
    <a href="/home">
     <img
     class="light"
     aria-hidden="true"
-    src="/assets/images/logo-light.png"
+    src="/assets/images/logo.webp"
     decoding="async"
     alt="logo"
-    width="221"
-    height="66"
-    *ngIf="!colorHeader && !phoneView"
-  />
-  <img
-    class="light"
-    aria-hidden="true"
-    src="/assets/images/logo-blue.png"
-    decoding="async"
-    alt="logo"
-    width="221"
-    height="66"
-    *ngIf="colorHeader || phoneView"
   />
    </a>
   </div>
@@ -31,37 +16,30 @@
     <ul class="navList" *ngIf="!phoneView">
       <li>
         <span
-          ><a href="/home" [ngClass]="colorHeader? 'color':'noColor'"
-            >Home</a
+          ><a href="/events"
+            >HOME</a
           ></span
         >
       </li>
       <li>
         <span
-          ><a href="/about-us" [ngClass]="colorHeader? 'color':'noColor'"
-            >About us</a
+          ><a href="/rankings"
+            >SERVICES</a
           ></span
         >
       </li>
       <li>
         <span
-          ><a href="/projects" [ngClass]="colorHeader? 'color':'noColor'"
-            >Projects</a
+          ><a href="/news"
+            >CONTACT</a
           ></span
         >
       </li>
       <li>
         <span
-          ><a href="/reviews" [ngClass]="colorHeader? 'color':'noColor'"
-            >Reviews</a
-          ></span
-        >
-      </li>
-      <li>
-        <span
-          ><a href="/contact" [ngClass]="colorHeader? 'color':'noColor'"
-            >Contact</a
-          ></span
+          ><a href="/record-lookup" class="button-6">
+            BOOK NOW
+          </a></span
         >
       </li>
     </ul>
@@ -78,9 +56,9 @@
 </header>
 <div class="navListMenu" *ngIf="showDropDown">
   <ul class="navListPhone">
-    <li><a href="/about-us">About</a></li>
-    <li><a href="/reviews">Reviews</a></li>
-    <li><a href="/projects">Projects</a></li>
-    <li><a href="/contact">Contact</a></li>
+    <li><a href="/events">HOME</a></li>
+    <li><a href="/news">SERVICES</a></li>
+    <li><a href="/rankings">CONTACT</a></li>
+    <li><a href="/recordss">BOOK NOW</a></li>
   </ul>
 </div>
