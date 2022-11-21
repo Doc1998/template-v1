@@ -12,6 +12,13 @@
     padding-top: 2vw;
     background-color: aliceblue;
   }
+  .button-6{
+    background-color: white;
+    a{
+      color: black !important;
+    }
+    margin-bottom: 2em;
+  }
   /* Dropdown content (hidden by default) */
 .dropdown-content {
   display: flex;
@@ -139,15 +146,21 @@
     #hero{
         height: auto;
         width: 100%;
-        padding-top: 6rem;
         text-align: center;
+        color: white;
+        .swoosh{
+          position: relative;
+        }
         .hero-content{
+            padding-top: 2rem;
             display: flex;
             flex-direction: column;
             align-items: center;
+            z-index: 10000;
+            background-color: blue;
         }
         .heroText{
-            width: 100%;
+          z-index: 19999;
             p{
                 width: 90%;
                 margin-left: 5%;
@@ -156,13 +169,16 @@
                 
             }
             h1,p{
-                color: black;
+                color: white;
                 margin-bottom: 1.5rem;
 
             }
             h1{
                 font-size: 1.3rem;
                 font-family: poppins-bold;   
+            }
+            a{
+              color: white;
             }
  
         }
@@ -174,7 +190,7 @@
         display: block;
         height: 0.125em;
         width: 1.515625em;
-        background: var(--primary);
+        background: white;
         opacity: 1;
         margin-top: 10px;
         left: 50%;
@@ -213,7 +229,7 @@
     margin-top: 5vw;
   }
     #hero{
-        padding-top: 3rem;
+        padding-top: 0rem;
         .hero-content{
             display: flex;
             flex-direction: row;
@@ -254,7 +270,6 @@
     justify-content: center;
     align-items: center;
     padding: 1em;
-
     p{
       font-family: poppins-light;
       margin-top: 1.5em;
@@ -338,12 +353,21 @@
    }
   
   #hero{
-    padding-top: 3rem;
+    padding-top: 0rem;
     .hero-content{
         display: flex;
         flex-direction: row;
+        picture{
+          position: relative;
+          top:100px;
+          left: 100px;
+          z-index:1000;
+        }
        .heroText{
-           width: 60%;
+        width: 100%;
+           position: relative;
+           left: 200px;
+           min-width: 500px;
             h1{
                 font-size: 2rem !important;
             }
@@ -351,10 +375,6 @@
                 font-size: 1.2rem;
             }
         }
-      .mock-up{
-          width: 700px;
-          
-      }
    }
    h1::after {
     content: '';
@@ -370,6 +390,10 @@
     transform: translateX(-50%);
 }
 }
+.swoosh{
+  position: relative;
+  top: -300px;
+}
 }
 
 
@@ -378,16 +402,16 @@
 header {
     width: 100%;
     z-index: 1000;
-    background-color: white;
-    position: fixed;
+    background-color: blue;
+    color: white;
+    position: relative;
     display: flex;
     justify-content: space-around;
-    box-shadow: -5px 0 22px -1px rgb(0 0 0 / 15%);
     font-family: poppins-bold;
     .navList {
       li {
         span:hover {
-          border-bottom: 5px solid #ffba19;
+          border-bottom: 5px solid white;
           padding-bottom: 5px;
         }
       }
@@ -417,7 +441,7 @@ header {
   a {
     text-decoration: none;
     font-weight: 600;
-    color: blue;
+    color: white;
   }
   .navigation {
     display: flex;
@@ -439,7 +463,7 @@ header {
     span {
       height: 2px;
       width: 30px;
-      background-color: #000;
+      background-color: white;
       display: block;
       position: absolute;
 
@@ -452,7 +476,7 @@ header {
         display: block;
         height: 2px;
         width: 80%;
-        background: #000;
+        background: white;
         opacity: 1;
         top: -6px;
         left: 0;
@@ -467,7 +491,7 @@ header {
         display: block;
         height: 2px;
         width: 80%;
-        background: #000;
+        background: white;
         opacity: 1;
         top: 6px;
         left: 0;
@@ -663,7 +687,6 @@ header {
 }
 
   header {
-    box-shadow: -5px 0 22px -1px rgb(0 0 0 / 15%);
     padding-top: 20px;
     position: unset;
   }

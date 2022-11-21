@@ -11,15 +11,17 @@
   </button>
   </div>
   <picture>
+    <source
+    media="(max-width: 600px)"
+    srcset="/assets/images/code-small.webp"
+  />
     <source media="(min-width: 601px)" srcset="/assets/images/code.webp" />
     <img
       aria-hidden="true"
       loading="lazy"
       decoding="async"
       src="/assets/images/code.webp"
-      alt="kitchen cabinets"
-      width="1920"
-      height="1280"
+      alt="code"
       style="filter: brightness(40%);"
     />
   </picture>
