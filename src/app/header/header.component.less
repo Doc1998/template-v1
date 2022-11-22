@@ -1,10 +1,14 @@
 @media only screen and (min-width: 0em) {
+  .contactInfo{
+    display: none;
+  }
   header {
     width: 100%;
     position: relative;
     z-index: 1000;
     display: flex;
-    height: 6em;
+    height: 4em;
+    overflow-y: hidden;
     justify-content: space-around;
     box-shadow: -5px 0 22px -1px rgb(0 0 0 / 15%);
 
@@ -275,9 +279,31 @@
   }
 }
 @media only screen and (min-width: 1024px) {
+  .contactInfo{
+    background-color: white;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    display:flex;
+    justify-content: space-around;
+    .headerContact{
+      display: flex;
+      align-items:  center;
+    }
+    .call-us{
+      display: flex;
+      flex-direction: column;
+      padding-left: 10px;
+      .call-us-text{
+        font-weight: bolder;
+        font-size: 1.2em;
+        color: var(--primary);
+      }
+    }
+  }
   header {
     box-shadow: none;
-    height: 6em;
+    height: 4em;
+    overflow-y: hidden;
   }
   .navList {
     font-size: 1.5rem;
