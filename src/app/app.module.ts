@@ -14,6 +14,7 @@ import { ReviewsComponent } from './reviews/reviews.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProcessComponent } from './process/process.component';
+import { LeadFormComponent } from './lead-form/lead-form.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ProcessComponent } from './process/process.component';
     ReviewsComponent,
     ProjectsComponent,
     ContactComponent,
-    ProcessComponent
+    ProcessComponent,
+    LeadFormComponent
   ],
   imports: [
     BrowserModule,

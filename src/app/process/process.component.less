@@ -1,8 +1,9 @@
 
 @media only screen and (min-width: 0em) {
     #process{
-        background-color: #F8F8F8!important;
+
         .block{
+            background-color: var(--primary)!important;
             width: 100vw;
             .contents{
                 display: flex;
@@ -22,6 +23,16 @@
                 
             }
         }
+        .block:before{
+            position: relative;
+            display: block;
+            height: 120%;
+            width: 120%;
+            background: url("/assets/images/content-circles.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 1;
+          }
         .dash{
             height: 1px;
             background-color: #292a2f;
@@ -38,9 +49,11 @@
     #process{
         display: flex;
         flex-direction: row;
+        
         .block{
             display: flex;
             border-right: 1px solid b;
+            
         }
     }
     .dash{
