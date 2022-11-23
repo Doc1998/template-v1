@@ -136,6 +136,7 @@
 }
 @media only screen and (min-width: 1024px) {
 
+
     .button-6{
         width: 25%;
         margin-right: 3em;
@@ -151,12 +152,9 @@
     #hero{
         overflow-y: none;
         picture{
-            object-fit: cover;
-            overflow-y: none;
-            max-height: 1080px;
             img{
-                object-fit: cover;
-                overflow-y: none;
+            max-height:100% 
+
             }
         }
         .btns{
@@ -189,5 +187,33 @@
             }
         }
    }
+}
+
+/* Large Desktop */
+@media only screen and (min-width: 1280px) {
+    #hero{
+        overflow-y: none;
+        picture{
+            img{
+            max-height:90% 
+            
+            }
+        }
+    }
+
+}
+
+/* YUGE Desktop */
+@media only screen and (min-width: 1840px) {
+    #hero{
+        overflow-y: none;
+        picture{
+            img{
+            max-height:80% 
+            
+            }
+        }
+    }
+
 }
 
