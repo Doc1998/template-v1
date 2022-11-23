@@ -96,6 +96,41 @@
       }
     }
   }
+  .button-6{
+    border-radius: 0;
+    
+  }
+  .primary{
+    width: 50%;
+    margin-left: 25%;
+  }
+  .primary:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-top: 2px solid var(--primary);
+    border-left: 2px solid var(--primary);
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    -webkit-transition: .2s ease;
+    -o-transition: .2s ease;
+    transition: .2s ease;
+}
+.primary:after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-bottom: 2px solid var(--primary);
+    border-right: 2px solid var(--primary);
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    -webkit-transition: .2s ease;
+    -o-transition: .2s ease;
+    transition: .2s ease;
+   
+}
 }
 
 /* Inbetween */

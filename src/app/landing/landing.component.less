@@ -1,4 +1,28 @@
 @media only screen and (min-width: 0em) {
+    #video-section{
+        background-color: #292a2f;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        h2{
+            color: white;
+        }
+        iframe{
+            height: 200px; 
+            width:350px;
+        }
+        .graphic-group img {
+            width: 30px !important;
+            margin-bottom: 0 !important;
+          }
+          .dash {
+            width: 50px;
+            border-bottom: 1px dashed white(67, 183, 255, 0.9);
+          }
+    }
     picture {
         position: absolute;
         top: 0;
@@ -191,6 +215,24 @@
 
 /* Large Desktop */
 @media only screen and (min-width: 1280px) {
+    #video-section{
+        iframe{
+            height: 455px; 
+            width:809px;
+        }
+        .graphic-group{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1em;
+        }
+          .dash {
+            width: 50px;
+            border-bottom: 1px dashed rgba(67, 183, 255, 0.9);
+            margin-left: 1em;
+            margin-right: 1em;
+          }
+    }
     #hero{
         overflow-y: none;
         picture{
