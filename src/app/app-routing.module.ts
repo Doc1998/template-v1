@@ -6,12 +6,13 @@ import { ContactComponent } from "./contact/contact.component";
 import { LandingComponent } from "./landing/landing.component";
 import { ProjectsComponent } from "./projects/projects.component";
 import { ReviewsComponent } from "./reviews/reviews.component";
+import { ServicesComponent } from "./services/services.component";
 
 const routes: Routes = [
   { path: "home", component: LandingComponent },
   { path: "", component: LandingComponent },
   { path: "contact", component: ContactComponent },
-  { path: "services", component: AboutUsComponent },
+  { path: "services", component: ServicesComponent },
 
 
 ];

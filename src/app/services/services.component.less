@@ -1,74 +1,96 @@
 @media only screen and (min-width: 0em) {
-  .services {
-    top: 2em;
+  .swoosh,.swoosh2{
+    display: none;
   }
-  
-  .serviceKeywords {
-    position: relative;
-    z-index: 1;
-  }
-  .serviceCard {
-    width: 90%;
-    color: black;
-    background-color: white;
-    top: 2em;
-    margin-left: 5%;
-    margin-bottom: 0;
-    box-shadow: rgb(38, 57, 77) 20px 20px 30px -10px;
-    border-top: 0.375em solid #ffba19;
-    border-radius: 0.3125em;
-    position: relative;
-    z-index: 9;
-    padding-bottom: 5em;
-    margin-bottom: 5em;
-  }
-  .card {
-    margin-top: 20px;
+ .service-block, .service-block-r{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    picture {
-      background-color: #ffba19;
-      padding: 20px;
-      border-radius: 50%;
-      margin-bottom: 1em;
+    margin-bottom: 2em;
+    .service-text{
+      margin-left: 10%;
+      margin-right: 10%;
+      h2{
+        font-size: 1em;
+      }
+
+      .text{
+        text-align: left;
+        font-size: .8em;
+      }
     }
-    p {
-      width: 70%;
-      font-size: 0.7rem;
-      margin-bottom: 1em;
-    }
-    h2 {
-      margin-bottom: 1em;
-    }
-  }
+ }
   
 }
 @media only screen and (min-width: 667px) {
-  .serviceCard{
-    top: 2em;
-  }
+
 }
 @media only screen and (min-width: 1024px) {
-  .serviceCard {
+.container-block{
+  background-color: #292a2f ;
+  .service-text{
+    width: 40%;
+    h2{
+      font-size: 1.2em;
+      margin-bottom: .5em;
+    }
+
+    .text{
+      text-align: left;
+      font-size: 1em;
+    }
+  }
+  .swoosh{
+    display:flex;
+    position: relative;
+    bottom: -1em;
+  }
+  .swoosh2{
+    display: flex;
+  }
+  margin-bottom: 8em;
+
+}
+  .service-block{
+    width: 100%;
     display: flex;
     flex-direction: row;
-    position: relative;
-    top: 4em;
-    border-top: none;
-    background-color: transparent;
-    box-shadow: none;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8em;
+    .service-text{
+      width: 30%;
+      h2{
+        font-size: 1.2em;
+        margin-bottom: .5em;
+      }
+
+      .text{
+        text-align: left;
+        font-size: 1em;
+      }
+    }
+}
+.service-block-r{
+  flex-direction: row-reverse;
+  color:white;
+  background-color: #292a2f ;
+  margin-bottom: 0;
+  margin-top: 0;
+  .service-text{
+    width: 30%;
+    h2{
+      font-size: 1.2em;
+      margin-bottom: .5em;
+      color: white;
+    }
+
+    .text{
+      text-align: left;
+      font-size: 1em;
+    }
   }
-  .card {
-    padding: 2em;
-    width: 100%;
-    min-height: 100% !important;
-    margin-left: 3%;
-    box-shadow: rgb(38, 57, 77) 20px 20px 30px -10px;
-    border-top: 0.375em solid #ffba19;
-    border-radius: 6px;
-    background-color: white;
-  }
+}
 }
