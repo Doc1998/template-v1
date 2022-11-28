@@ -56,7 +56,7 @@
    </a>
   </div>
   <div class="navigation">
-    <ul class="navList" *ngIf="!phoneView">
+    <ul class="navList">
       <li>
         <span
           ><a href="/home"
@@ -66,7 +66,7 @@
       </li>
       <li>
         <span
-          ><a href="/rankings"
+          ><a href="/services"
             >SERVICES</a
           ></span
         >
@@ -80,9 +80,11 @@
       </li>
       <li>
         <span
-          ><a href="/record-lookup" class="button-6">
-            BOOK NOW
-          </a></span
+          >        <a class="button-6" style="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/irelandwebdesigns/15min'});return false;"><!-- Calendly link widget begin -->
+            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+            <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+            <a href="" style="color:white;text-decoration:none;" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/irelandwebdesigns/15min'});return false;">BOOK</a>
+            <!-- Calendly link widget end --></a></span
         >
       </li>
     </ul>
@@ -91,7 +93,7 @@
       class="hamburger-menu"
       (click)="dropDownMenu(ham)"
       #ham
-      *ngIf="phoneView"
+      
     >
       <span aria-hidden="true"></span>
     </button>
@@ -100,8 +102,8 @@
 <div class="navListMenu" *ngIf="showDropDown">
   <ul class="navListPhone">
     <li><a href="/home">HOME</a></li>
-    <li><a href="/news">SERVICES</a></li>
+    <li><a href="/services">SERVICES</a></li>
     <li><a href="/contact">CONTACT</a></li>
-    <li><a href="/recordss">BOOK NOW</a></li>
+    <li><a href="/booking">BOOK NOW</a></li>
   </ul>
 </div>

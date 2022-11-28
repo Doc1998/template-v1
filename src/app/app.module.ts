@@ -16,6 +16,8 @@ import { ContactComponent } from './contact/contact.component';
 import { ProcessComponent } from './process/process.component';
 import { LeadFormComponent } from './lead-form/lead-form.component';
 import { AcheivmentsComponent } from './acheivments/acheivments.component';
+import { BookingComponent } from './booking/booking.component';
+import { CalendlyWidgetComponent } from './calendly-widget/calendly-widget.component';
 
 @NgModule({
   declarations: [
@@ -32,10 +34,12 @@ import { AcheivmentsComponent } from './acheivments/acheivments.component';
     ContactComponent,
     ProcessComponent,
     LeadFormComponent,
-    AcheivmentsComponent
+    AcheivmentsComponent,
+    BookingComponent,
+    CalendlyWidgetComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule
   ],
   providers: [],
