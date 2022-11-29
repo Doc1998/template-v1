@@ -216,42 +216,119 @@
         }
    }
 }
-
 /* Large Desktop */
 @media only screen and (min-width: 1280px) {
-    #video-section{
-        iframe{
-            height: 455px; 
-            width:809px;
+  
+        #video-section{
+            iframe{
+                height: 455px; 
+                width:809px;
+            }
+            .graphic-group{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 1em;
+            }
+              .dash {
+                width: 50px;
+                border-bottom: 1px dashed rgba(67, 183, 255, 0.9);
+                margin-left: 1em;
+                margin-right: 1em;
+              }
         }
-        .graphic-group{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 1em;
-        }
-          .dash {
-            width: 50px;
-            border-bottom: 1px dashed rgba(67, 183, 255, 0.9);
-            margin-left: 1em;
-            margin-right: 1em;
-          }
-    }
-    #hero{
-        overflow-y: none;
-        picture{
-            img{
-            max-height:90% 
-            
+        #hero{
+            overflow-y: none;
+            picture{
+                img{
+                max-height:90% 
+                
+                }
+            }
+            h1::after {
+                left: 40%;
             }
         }
-        h1::after {
-            left: 40%;
+        #hero{
+            padding-bottom: 8rem;
         }
-    }
+        .button-6{
+            width: 25%;
+            margin-right: 3em;
+            font-weight: bold;
+            font-size: 1em;
+            color: black;
+        }
+        .button-6-white{
+            width: 25%;
+            margin-left: 3em;
+            font-weight: bold;
+            font-size: 1em;
+        }
+    
+        .hero-content{
+            width: 50%;
+            margin-left: 15%;
+            text-align: center;
+            padding-top: 3rem;
+            flex-direction: row;
+            .heroText{
+                 .home-h{
+                     padding-bottom: .5em;
+                 }
+                 h1{
+                     font-size: 1.5rem !important;
+                     
+                 }
+                 p{
+                     padding-bottom: 2em;
+                 }
+             }
+        }
+    
 
 }
+@media (min-width: 1279px) and (max-height: 610px){
+    
+    #hero{
+        padding-bottom: 2rem;
+    }
+    .button-6{
+        width: 25%;
+        margin-right: 3em;
+        font-weight: bold;
+        font-size: .8em;
+        color: black;
+    }
+    .button-6-white{
+        width: 25%;
+        margin-left: 3em;
+        font-weight: bold;
+        font-size: .8em;
+    }
 
+    .hero-content{
+        width: 50%;
+        margin-left: 15%;
+        text-align: center;
+        padding-top: 3rem;
+        flex-direction: row;
+        .heroText{
+             .home-h{
+                 padding-bottom: .5em;
+             }
+             h1{
+                 font-size: 1.5rem !important;
+                 
+             }
+             p{
+                 padding-bottom: 2em;
+             }
+         }
+    }
+    
+
+}
 /* YUGE Desktop */
 @media only screen and (min-width: 1840px) {
     #hero{
