@@ -1,5 +1,20 @@
 /* Mobile */
 @media only screen and (min-width: 0em) {
+  .offer-box{
+    display: flex;
+    flex-direction: column;
+    .title{
+      h2{
+      }
+    }
+    .offer-details{
+      display: flex;
+      flex-direction: column;
+      font-family: poppins-bold;
+      font-size: .7em;
+      margin-bottom: 1.5em;
+    }
+  }
   #int-hero {
     display: flex;
     justify-content: center;
@@ -78,6 +93,22 @@
 
 /* Small Desktop */
 @media only screen and (min-width: 1280px) {
+  .offer-box{
+    display: flex;
+    flex-direction: column;
+    .title{
+      h2{
+        font-size: 1.2em;
+      }
+    }
+    .offer-details{
+      display: flex;
+      flex-direction: column;
+      font-family: poppins-bold;
+      font-size: 1em;
+      margin-bottom: 2.5em;
+    }
+  }
   #int-hero {
     min-height: 18.75em;
     height: auto;
@@ -101,8 +132,13 @@
 
 /* Mobile */
 @media only screen and (min-width: 0em) {
+  
   #form {
-    padding: 3.125em 0;
+    .button-6{
+      width: 100%;
+      font-size: 1em;
+    }
+    padding: .125em 0;
     margin: auto;
     position: relative;
     padding-bottom: 36%;
@@ -166,7 +202,7 @@
         input[type="url"],
         textarea {
           font-size: 0.8em;
-          height: 5.2em;
+          height: 1.5em;
           border: none;
           border-bottom: 0.0625em solid #d4d4d4;
           background: transparent;
@@ -177,7 +213,7 @@
         }
 
         textarea {
-          min-height: 12.25em;
+          min-height: 6.25em;
           padding-top: 1.25em;
         }
 
@@ -190,6 +226,7 @@
       .button-solid {
         border: none;
       }
+      
     }
 
     .contact-right {
@@ -342,11 +379,11 @@
     align-content: flex-start;
     font-size: 1.4vw;
     width: 100%;
-    padding: 9.37em 0;
+    padding: 5.37em 0;
 
     .left-section {
       width: 46.875em;
-      margin: 0;
+      margin-top: 0;
       margin-left: 2.34em;
       margin-right: 2.34em;
     }
