@@ -3,11 +3,15 @@
       display: none;
     }
    .service-block, .service-block-r{
+    .service-image{
+      padding-top: 1em;
+    }
       width: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      box-shadow: #00000014 30px 10px 30px 10px;
       margin-bottom: 2em;
       .service-text{
         margin-left: 10%;
@@ -18,7 +22,18 @@
   
         .text{
           text-align: left;
-          font-size: .8em;
+          font-size: .7em;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-top: .5em;
+          .button-6{
+            font-size: 1em;
+            width: 80%;
+            margin-top: 2em;
+            margin-bottom: 2em;
+          }
           li{
             list-style-type: none;
           }
@@ -31,6 +46,60 @@
   
   }
   @media only screen and (min-width: 1024px) {
+    .services{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 100%;
+      
+    }
+    .swoosh,.swoosh2{
+      display: none;
+    }
+    .service-block,.container-block{
+      flex: 40%;
+      width: 80%;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+
+   .service-block, .service-block-r{
+      
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      box-shadow: #00000014 30px 10px 30px 10px;
+      margin-bottom: 2em;
+      .service-text{
+        margin-left: 10%;
+        margin-right: 10%;
+        h2{
+          font-size: 1em;
+        }
+  
+        .text{
+          text-align: left;
+          font-size: .7em;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .button-6{
+            width: 80%;
+            margin-top: 2em;
+            margin-bottom: 2em;
+            font-size: 1em;
+          }
+          li{
+            list-style-type: none;
+          }
+        }
+      }
+   }
   
   }
   
