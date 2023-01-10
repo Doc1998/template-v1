@@ -28,7 +28,7 @@ const routes: Routes = [
   { path: "web-design-blog", component: WebDesignStandardComponent, data: {title : 'Web Design Lifetime Support & Blogging | Web Design Ireland | Small business Web Development'}  },
   { path: "web-design-standalone", component: WebDesignStandardComponent, data: {title : 'Standalone Website | Web Design Ireland | Small business Web Development'}  },
   { path: "standard", component: OfferComponent },
-  { path: "standard-blog", component: OfferTwoComponent },
+  { path: "ecommerce", component: OfferTwoComponent },
   { path: "locations/cork-web-design", component: HomeCorkComponent, data: {title : 'Cork Web Design | Small business Web Development'} },
   { path: "locations/galway-web-design", component: HomeGalwayComponent, data: {title : 'Galway Web Design | Small business Web Development'} },
   { path: "locations/dublin-web-design", component: HomeDublinComponent, data: {title : 'Dublin Web Design | Small business Web Development'} },
@@ -37,7 +37,7 @@ const routes: Routes = [
   { path: "projects", component: ProjectsComponent,  data: {title : 'Projects | Small business Web Development | Web Design Ireland'}},
   { path: "contact", component: ContactComponent, data: {title : 'Contact | Small business Web Development | Web Design Irelands'}},
   { path: "articles", component: ArticlesComponent, data: {title : 'Articles | Small business Web Development | Web Design Ireland'}},
-  { path: "special-offer", component: AdOfferComponent, data: {title : 'Special Offer | Small business Web Development | Web Design Ireland'}},
+  { path: "special-offer", component: WebDesignStandardComponent, data: {title : 'Special Offer | Small business Web Development | Web Design Ireland'}},
   { path: "articles/2022/the-importance-of-seo-for-your-business", component: ArticleOneComponent, data: {title : 'The Importance Of SEO For Your Business | Small business Web Development | Web Design Ireland'}},
   { path: "articles/2022/wordpress-is-bad-for-SEO-and-customer-experience", component: ArticleTwoComponent, data: {title : 'Wordpress is Bad for SEO and Customer Experience | Small business Web Development | Web Design Ireland'}},
   
