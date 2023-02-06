@@ -17,6 +17,7 @@ import { LandingComponent } from "./landing/landing.component";
 import { OfferTwoComponent } from "./offer-two/offer-two.component";
 import { OfferComponent } from "./offer/offer.component";
 import { ProjectsComponent } from "./projects/projects.component";
+import { QuestionnaireComponent } from "./questionnaire/questionnaire.component";
 import { ReviewsComponent } from "./reviews/reviews.component";
 import { WebDesignStandardComponent } from "./web-design-standard/web-design-standard.component";
 
@@ -36,6 +37,7 @@ const routes: Routes = [
   { path: "web-design-ireland", component: AboutUsComponent, data: {title : 'About us | Small business Web Development | Ireland Web Designs'} },
   { path: "projects", component: ProjectsComponent,  data: {title : 'Projects | Small business Web Development | Web Design Ireland'}},
   { path: "contact", component: ContactComponent, data: {title : 'Contact | Small business Web Development | Web Design Irelands'}},
+  { path: "questionnaire", component: QuestionnaireComponent, data: {title : 'Questionnaire | Small business Web Development | Web Design Irelands'}},
   { path: "articles", component: ArticlesComponent, data: {title : 'Articles | Small business Web Development | Web Design Ireland'}},
   { path: "special-offer", component: WebDesignStandardComponent, data: {title : 'Special Offer | Small business Web Development | Web Design Ireland'}},
   { path: "articles/2022/the-importance-of-seo-for-your-business", component: ArticleOneComponent, data: {title : 'The Importance Of SEO For Your Business | Small business Web Development | Web Design Ireland'}},

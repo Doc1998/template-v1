@@ -1,0 +1,77 @@
+<app-header></app-header>
+<section id="int-hero">
+  <h1 id="home-h">Application</h1>
+  <picture>
+    <source
+      media="(max-width: 600px)"
+      srcset="/assets/images/code.png"
+    />
+    <source media="(min-width: 601px)" srcset="/assets/images/code.png" />
+    <img
+      aria-hidden="true"
+      decoding="async"
+      src="/assets/images/code.png"
+      alt="code"
+      width="400"
+      height="662"
+    />
+  </picture>
+</section>
+
+<!-- ============================================ -->
+<!--                    FORM                      -->
+<!-- ============================================ -->
+
+<section id="form">
+  <div class="left-section">
+    <section id="offer-great">
+      <div class="offer-box">
+        <div class="title">
+          <h2> Questionnaire / Application :</h2>
+        </div>
+        <div class="offer-details">
+            <span>Please fill out this questionnaire as accuractely as you can. This will act as your application for our free website AND will be used to make Keyword-Researched copywriting for your website.</span>
+        </div>
+      </div>
+    </section>
+
+        <form
+        action="https://formspree.io/f/mrgdywyg"
+        method="POST"
+        id="contact"
+      >
+      <div class="input-group">
+        <label>
+            Your email:
+          </label>
+          <input type="email" name="email" placeholder="email">
+      </div>
+      <div class="input-group">
+        <label>
+            Name:
+          </label>
+          <input type="text" name = "name" placeholder="name">
+      </div>
+      <div class="input-group">
+        <label>
+            Name of Business:
+          </label>
+          <input type="tel" name = "biz-name" placeholder="Business name..">
+      </div>
+      <div class="input-group">
+        <label>
+            Brief description of your business:
+          </label>
+          <textarea name="biz-description" placeholder="How long you've been in business, what do you need help with ect"></textarea>
+      </div>
+      <div class="input-group">
+        <label>
+            List all your services & highlight your main services :
+          </label>
+          <textarea name="services" placeholder="Deep cleaning, power washing ect"></textarea>
+      </div>
+        <!-- your other form fields go here -->
+        <button type="submit" class="button-6">Send</button>
+      </form>
+  </div>
+</section>
