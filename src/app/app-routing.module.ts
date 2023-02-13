@@ -39,7 +39,7 @@ const routes: Routes = [
   { path: "contact", component: ContactComponent, data: {title : 'Contact | Small business Web Development | Web Design Irelands'}},
   { path: "questionnaire", component: QuestionnaireComponent, data: {title : 'Questionnaire | Small business Web Development | Web Design Irelands'}},
   { path: "articles", component: ArticlesComponent, data: {title : 'Articles | Small business Web Development | Web Design Ireland'}},
-  { path: "special-offer", component: WebDesignStandardComponent, data: {title : 'Special Offer | Small business Web Development | Web Design Ireland'}},
+  { path: "special-offer", component: ContactComponent, data: {title : 'Special Offer | Small business Web Development | Web Design Ireland'}},
   { path: "articles/2022/the-importance-of-seo-for-your-business", component: ArticleOneComponent, data: {title : 'The Importance Of SEO For Your Business | Small business Web Development | Web Design Ireland'}},
   { path: "articles/2022/wordpress-is-bad-for-SEO-and-customer-experience", component: ArticleTwoComponent, data: {title : 'Wordpress is Bad for SEO and Customer Experience | Small business Web Development | Web Design Ireland'}},
   
