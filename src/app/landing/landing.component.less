@@ -146,56 +146,64 @@
     #hero{
         height: auto;
         width: 100%;
-        text-align: center;
+        text-align:unset;
         color: white;
         .swoosh{
           position: relative;
         }
         .hero-content{
-            padding-top: 2rem;
+            padding-top: 1rem;
             display: flex;
             flex-direction: column;
             align-items: center;
+
             z-index: 10000;
             background-color: blue;
         }
         .heroText{
           z-index: 100;
+          margin-left: 10px;
             p{
                 width: 90%;
-                margin-left: 5%;
                 font-family: poppins;
-                font-size: 0.6rem;
+                font-size: 0.9rem;
                 
             }
-            h1,p{
+            h2,p{
                 color: white;
                 margin-bottom: 1.5rem;
 
             }
-            h1{
+            h2{
                 font-size: 1.3rem;
                 font-family: poppins-bold;   
             }
             a{
               color: white;
             }
+            h1{
+              font-size: .5em;
+              text-align: left;
+              color: white;
+            }
  
         }
         
     }
-    h1::after {
-        content: '';
-        position: absolute;
-        display: block;
-        height: 0.125em;
-        width: 1.515625em;
-        background: white;
-        opacity: 1;
-        margin-top: 10px;
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-50%);
+ 
+
+    .hero-cta{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      .stars{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+      }
     }
 
 }
@@ -207,6 +215,16 @@
     width: 160px;
     border-bottom: 1px dashed blue;
     margin: 10px 0px 30px 0px;
+  }
+  .hero-cta{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: left;
+    .stars{
+      margin-left: 10px
+      ;
+    }
   }
   .descTitle {
     display: flex;
@@ -231,15 +249,20 @@
     #hero{
         padding-top: 0rem;
         .hero-content{
+          padding-top: 0rem;
             display: flex;
             flex-direction: row;
            .heroText{
                width: 60%;
-                h1{
-                    font-size: 1.6em !important;
+                h2{
+                    font-size: 1.2em !important;
                 }
                 p{
-                    font-size: 1em;
+                    font-size: .8em;
+                }
+                h1{
+                  font-size: .5em;
+
                 }
             }
           .mock-up{
@@ -263,6 +286,16 @@
     }
 }
 @media only screen and (min-width: 1281px) {
+  .hero-cta{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: left;
+    align-items: center;
+    .stars{
+      margin-left: 30px;
+    }
+  }
   .reasons{
     display: flex;
     flex-direction: row;
@@ -353,8 +386,9 @@
    }
   
   #hero{
-    padding-top: 0rem;
+    
     .hero-content{
+      padding-top: 1rem;
         display: flex;
         flex-direction: row;
         picture{
@@ -368,11 +402,15 @@
            position: relative;
            left: 200px;
            min-width: 500px;
-            h1{
+            h2{
                 font-size: 1.7rem !important;
             }
             p{
                 font-size: 1rem;
+            }
+            h1{
+              font-size: .5em;
+
             }
         }
    }
