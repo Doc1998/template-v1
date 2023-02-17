@@ -39,6 +39,7 @@ import { WebDesignBlogComponent } from './web-design-blog/web-design-blog.compon
 import { WebsiteStandaloneComponent } from './website-standalone/website-standalone.component';
 import { ArticleFiveComponent } from './article-five/article-five.component';  
 import { QuestionnaireComponent } from './questionnaire/questionnaire.component';
+import { ArticlesixComponent } from './articlesix/articlesix.component';
 
 @NgModule({
   declarations: [
@@ -77,7 +78,9 @@ import { QuestionnaireComponent } from './questionnaire/questionnaire.component'
     WebDesignBlogComponent,
     WebsiteStandaloneComponent,
     ArticleFiveComponent,
-    QuestionnaireComponent
+    QuestionnaireComponent,
+    ArticlesixComponent
+    
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
