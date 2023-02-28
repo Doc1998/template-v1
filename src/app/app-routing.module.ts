@@ -16,6 +16,8 @@ import { HomeLimerickComponent } from "./home-limerick/home-limerick.component";
 import { LandingComponent } from "./landing/landing.component";
 import { OfferTwoComponent } from "./offer-two/offer-two.component";
 import { OfferComponent } from "./offer/offer.component";
+import { PriceCalculatorComponent } from "./price-calculator/price-calculator.component";
+import { PriceContactComponent } from "./price-contact/price-contact.component";
 import { ProjectsComponent } from "./projects/projects.component";
 import { QuestionnaireComponent } from "./questionnaire/questionnaire.component";
 import { ReviewsComponent } from "./reviews/reviews.component";
@@ -44,7 +46,11 @@ const routes: Routes = [
   { path: "articles/2022/wordpress-is-bad-for-SEO-and-customer-experience", component: ArticleTwoComponent, data: {title : 'Wordpress is Bad for SEO and Customer Experience | Small business Web Development | Web Design Ireland'}},
   
   { path: "articles/2022/ireland-web-design-vs-web-development-what-is-the-difference", component: ArticleFourWebDesignVsWebDevComponent, data: {title : 'Ireland Web Design vs Web Development | Small business Web Development | Web Design Ireland'}},
-  { path: "articles/2022/why-you-should-use-google-analytics-for-your-business", component: ArticleFiveComponent, data: {title : 'Ireland Web Design vs Web Development | Small business Web Development | Web Design Ireland'}}
+  { path: "articles/2022/why-you-should-use-google-analytics-for-your-business", component: ArticleFiveComponent, data: {title : 'Ireland Web Design vs Web Development | Small business Web Development | Web Design Ireland'}},
+  { path: "price-calculator", component: PriceCalculatorComponent, data: {title : 'Ireland Web Design vs Web Development | Small business Web Development | Web Design Ireland'}},
+  { path: "price-contact", component: PriceContactComponent, data: {title : 'Ireland Web Design vs Web Development | Small business Web Development | Web Design Ireland'}},
+
+
 
 
 

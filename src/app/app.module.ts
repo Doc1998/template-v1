@@ -40,6 +40,9 @@ import { WebsiteStandaloneComponent } from './website-standalone/website-standal
 import { ArticleFiveComponent } from './article-five/article-five.component';  
 import { QuestionnaireComponent } from './questionnaire/questionnaire.component';
 import { ArticlesixComponent } from './articlesix/articlesix.component';
+import { PriceCalculatorComponent } from './price-calculator/price-calculator.component';
+import { PriceContactComponent } from './price-contact/price-contact.component';
+import { LandingUpdatedComponent } from './landing-updated/landing-updated.component';
 
 @NgModule({
   declarations: [
@@ -79,7 +82,10 @@ import { ArticlesixComponent } from './articlesix/articlesix.component';
     WebsiteStandaloneComponent,
     ArticleFiveComponent,
     QuestionnaireComponent,
-    ArticlesixComponent
+    ArticlesixComponent,
+    PriceCalculatorComponent,
+    PriceContactComponent,
+    LandingUpdatedComponent
     
   ],
   imports: [

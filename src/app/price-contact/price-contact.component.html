@@ -1,0 +1,83 @@
+<app-header></app-header>
+<section id="int-hero">
+  <h1 id="home-h">Price-Calculation</h1>
+  <picture>
+    <source
+      media="(max-width: 600px)"
+      srcset="/assets/images/code.png"
+    />
+    <source media="(min-width: 601px)" srcset="/assets/images/code.png" />
+    <img
+      aria-hidden="true"
+      decoding="async"
+      src="/assets/images/code.png"
+      alt="code"
+      width="400"
+      height="662"
+    />
+  </picture>
+</section>
+
+<!-- ============================================ -->
+<!--                    FORM                      -->
+<!-- ============================================ -->
+
+<section id="form">
+  <div class="left-section">
+    <section id="offer-great">
+      <div class="offer-box">
+        <div class="title">
+          <h2>Price Calculator</h2>
+        </div>
+        <div class="offer-details">
+            <span>Please fill in your details below and you will receive your quote via email</span>
+        </div>
+      </div>
+    </section>
+
+        <form
+        action="https://formspree.io/f/mrgdywyg"
+        method="POST"
+        id="contact"
+      >
+      <div class="input-group">
+        <label>
+            Your email:
+          </label>
+          <input type="email" name="email" placeholder="email">
+      </div>
+      <div class="input-group">
+        <label>
+            Name:
+          </label>
+          <input type="text" name = "name" placeholder="name">
+      </div>
+      <div class="input-group">
+        <label>
+            Brief description of your business:
+          </label>
+          <textarea name="message" placeholder="How long you've been in business, what do you need help with ect"></textarea>
+      </div>
+        <!-- your other form fields go here -->
+        <button type="submit" class="button-6">Get Pricing</button>
+      </form>
+  </div>
+  <div class="contact-right">
+    <div class="info-group">
+      <span class="heading">Location</span>
+      <span class="info">Limerick & Cork, Ireland</span>
+    </div>
+    <div class="info-group">
+      <span class="heading">Phone</span>
+      <a class="info" href="tel:0838689176">0838689176</a>
+    </div>
+    <div class="info-group">
+      <span class="heading">Email</span>
+      <a class="info" href="mailto:info@irelandwebdesigns.ie">Click to Email</a>
+    </div>
+    <div class="info-group">
+      <span class="heading">Hours</span>
+      <span class="info last">Mon to Fri: 8am to 6pm</span>
+    </div>
+  </div>
+</section>
